@@ -123,3 +123,16 @@ vidraw/
 ## License
 
 MIT License
+
+
+
+## 📞 联系方式
+
+- **GitHub**: https://github.com/taxiao213/Vidraw
+- **微信公众号**: 他晓
+
+------
+
+<div style="text-align: center;">**⭐ 如果这个项目对你有帮助，请给一个 Star！⭐**</div>
+
+<div style="text-align: center;">Made with ❤️ by 他晓</div>
