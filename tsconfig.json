@@ -19,16 +19,18 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@excalidraw/common": ["./packages/common/src/index.ts"],
-      "@excalidraw/common/*": ["./packages/common/src/*"],
-      "@excalidraw/excalidraw": ["./packages/excalidraw/index.tsx"],
-      "@excalidraw/excalidraw/*": ["./packages/excalidraw/*"],
-      "@excalidraw/element": ["./packages/element/src/index.ts"],
-      "@excalidraw/element/*": ["./packages/element/src/*"],
-      "@excalidraw/math": ["./packages/math/src/index.ts"],
-      "@excalidraw/math/*": ["./packages/math/src/*"],
-      "@excalidraw/utils": ["./packages/utils/src/index.ts"],
-      "@excalidraw/utils/*": ["./packages/utils/src/*"]
+      "@vidraw/common": ["./packages/common/src/index.ts"],
+      "@vidraw/common/*": ["./packages/common/src/*"],
+      "@vidraw/vidraw": ["./packages/excalidraw/index.tsx"],
+      "@vidraw/vidraw/*": ["./packages/excalidraw/*"],
+      "@vidraw/excalidraw": ["./packages/excalidraw/index.tsx"],
+      "@vidraw/excalidraw/*": ["./packages/excalidraw/*"],
+      "@vidraw/element": ["./packages/element/src/index.ts"],
+      "@vidraw/element/*": ["./packages/element/src/*"],
+      "@vidraw/math": ["./packages/math/src/index.ts"],
+      "@vidraw/math/*": ["./packages/math/src/*"],
+      "@vidraw/utils": ["./packages/utils/src/index.ts"],
+      "@vidraw/utils/*": ["./packages/utils/src/*"]
     }
   },
   "include": ["packages", "excalidraw-app"],

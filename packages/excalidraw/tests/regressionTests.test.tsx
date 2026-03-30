@@ -7,11 +7,9 @@ import {
   KEYS,
   reseed,
   MQ_MIN_WIDTH_DESKTOP,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { setDateTimeForTests } from "@excalidraw/common";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import { setDateTimeForTests } from "@vidraw/common";
 
 import { Excalidraw } from "../index";
 import * as StaticScene from "../renderer/staticScene";
@@ -27,6 +25,8 @@ import {
   togglePopover,
   unmountComponent,
 } from "./test-utils";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 const { h } = window;
 

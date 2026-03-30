@@ -6,32 +6,30 @@ import {
   isMemberOf,
   isPromiseLike,
   EVENT,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { mutateElement } from "@excalidraw/element";
-import { deepCopyElement } from "@excalidraw/element";
-import {
-  isFrameLikeElement,
-  isInitializedImageElement,
-} from "@excalidraw/element";
+import { mutateElement } from "@vidraw/element";
+import { deepCopyElement } from "@vidraw/element";
+import { isFrameLikeElement, isInitializedImageElement } from "@vidraw/element";
 
-import { getContainingFrame } from "@excalidraw/element";
-
-import type { ValueOf } from "@excalidraw/common/utility-types";
-
-import type { IMAGE_MIME_TYPES, STRING_MIME_TYPES } from "@excalidraw/common";
-import type {
-  ExcalidrawElement,
-  NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+import { getContainingFrame } from "@vidraw/element";
 
 import { ExcalidrawError } from "./errors";
+
 import {
   createFile,
   getFileHandle,
   isSupportedImageFileType,
   normalizeFile,
 } from "./data/blob";
+
+import type { ValueOf } from "@vidraw/common/utility-types";
+
+import type { IMAGE_MIME_TYPES, STRING_MIME_TYPES } from "@vidraw/common";
+import type {
+  ExcalidrawElement,
+  NonDeletedExcalidrawElement,
+} from "@vidraw/element/types";
 
 import type { BinaryFiles } from "./types";
 

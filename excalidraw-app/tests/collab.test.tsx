@@ -1,18 +1,18 @@
-import { CaptureUpdateAction, newElementWith } from "@excalidraw/excalidraw";
+import { CaptureUpdateAction, newElementWith } from "@vidraw/excalidraw";
 import {
   createRedoAction,
   createUndoAction,
-} from "@excalidraw/excalidraw/actions/actionHistory";
-import { syncInvalidIndices } from "@excalidraw/element";
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
-import { act, render, waitFor } from "@excalidraw/excalidraw/tests/test-utils";
+} from "@vidraw/excalidraw/actions/actionHistory";
+import { syncInvalidIndices } from "@vidraw/element";
+import { API } from "@vidraw/excalidraw/tests/helpers/api";
+import { act, render, waitFor } from "@vidraw/excalidraw/tests/test-utils";
 import { vi } from "vitest";
 
-import { StoreIncrement } from "@excalidraw/element";
-
-import type { DurableIncrement, EphemeralIncrement } from "@excalidraw/element";
+import { StoreIncrement } from "@vidraw/element";
 
 import ExcalidrawApp from "../App";
+
+import type { DurableIncrement, EphemeralIncrement } from "@vidraw/element";
 
 const { h } = window;
 

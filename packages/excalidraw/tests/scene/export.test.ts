@@ -1,16 +1,6 @@
-import { exportToCanvas, exportToSvg } from "@excalidraw/utils";
+import { exportToCanvas, exportToSvg } from "@vidraw/utils";
 
-import {
-  applyDarkModeFilter,
-  FONT_FAMILY,
-  FRAME_STYLE,
-} from "@excalidraw/common";
-
-import type {
-  ExcalidrawTextElement,
-  FractionalIndex,
-  NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+import { applyDarkModeFilter, FONT_FAMILY, FRAME_STYLE } from "@vidraw/common";
 
 import { prepareElementsForExport } from "../../data";
 import * as exportUtils from "../../scene/export";
@@ -21,6 +11,12 @@ import {
   textFixture,
 } from "../fixtures/elementFixture";
 import { API } from "../helpers/api";
+
+import type {
+  ExcalidrawTextElement,
+  FractionalIndex,
+  NonDeletedExcalidrawElement,
+} from "@vidraw/element/types";
 
 describe("exportToSvg", () => {
   const ELEMENT_HEIGHT = 100;

@@ -3,26 +3,25 @@ import {
   pointOnLineSegment,
   pointRotateRads,
   type Radians,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
-import {
-  SIDE_RESIZING_THRESHOLD,
-  type EditorInterface,
-} from "@excalidraw/common";
-
-import type { GlobalPoint, LineSegment, LocalPoint } from "@excalidraw/math";
-
-import type { AppState, Zoom } from "@excalidraw/excalidraw/types";
-import type { Bounds } from "@excalidraw/common";
+import { SIDE_RESIZING_THRESHOLD, type EditorInterface } from "@vidraw/common";
 
 import { getElementAbsoluteCoords } from "./bounds";
+
 import {
   getTransformHandlesFromCoords,
   getTransformHandles,
   getOmitSidesForEditorInterface,
   canResizeFromSides,
 } from "./transformHandles";
+
 import { isImageElement, isLinearElement } from "./typeChecks";
+
+import type { GlobalPoint, LineSegment, LocalPoint } from "@vidraw/math";
+
+import type { AppState, Zoom } from "@vidraw/excalidraw/types";
+import type { Bounds } from "@vidraw/common";
 
 import type {
   TransformHandleType,

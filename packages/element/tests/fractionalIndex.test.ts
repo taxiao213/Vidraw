@@ -1,25 +1,25 @@
 /* eslint-disable no-lone-blocks */
 import { generateKeyBetween } from "fractional-indexing";
 
-import { arrayToMap } from "@excalidraw/common";
+import { arrayToMap } from "@vidraw/common";
 
 import {
   syncInvalidIndices,
   syncMovedIndices,
   validateFractionalIndices,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { deepCopyElement } from "@excalidraw/element";
+import { deepCopyElement } from "@vidraw/element";
 
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
+import { API } from "@vidraw/excalidraw/tests/helpers/api";
+
+import { InvalidFractionalIndexError } from "../src/fractionalIndex";
 
 import type {
   ElementsMap,
   ExcalidrawElement,
   FractionalIndex,
-} from "@excalidraw/element/types";
-
-import { InvalidFractionalIndexError } from "../src/fractionalIndex";
+} from "@vidraw/element/types";
 
 describe("sync invalid indices with array order", () => {
   describe("should NOT sync empty array", () => {

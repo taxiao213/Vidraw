@@ -1,10 +1,10 @@
 import React, { memo, useEffect, useState } from "react";
 
-import type { ExcalidrawElement, NonDeleted } from "@excalidraw/element/types";
-
 import { useTransition } from "../hooks/useTransition";
 
 import { EmptyLibraryUnit, LibraryUnit } from "./LibraryUnit";
+
+import type { ExcalidrawElement, NonDeleted } from "@vidraw/element/types";
 
 import type { SvgCache } from "../hooks/useLibraryItemSvg";
 import type { LibraryItem } from "../types";

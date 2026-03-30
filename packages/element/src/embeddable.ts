@@ -3,14 +3,14 @@ import {
   VERTICAL_ALIGN,
   escapeDoubleQuotes,
   getFontString,
-} from "@excalidraw/common";
-
-import type { ExcalidrawProps } from "@excalidraw/excalidraw/types";
-import type { MarkRequired } from "@excalidraw/common/utility-types";
+} from "@vidraw/common";
 
 import { newTextElement } from "./newElement";
 import { wrapText } from "./textWrapping";
 import { isIframeElement } from "./typeChecks";
+
+import type { MarkRequired } from "@vidraw/common/utility-types";
+import type { ExcalidrawProps } from "@vidraw/excalidraw/types";
 
 import type {
   ExcalidrawElement,

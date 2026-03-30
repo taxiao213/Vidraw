@@ -1,6 +1,6 @@
-import { VersionedSnapshotStore } from "@excalidraw/common";
+import { VersionedSnapshotStore } from "@vidraw/common";
 
-import type { FileId } from "@excalidraw/element/types";
+import type { FileId } from "@vidraw/element/types";
 
 export type FileLoadingStatus = "loading" | "loaded" | "error";
 

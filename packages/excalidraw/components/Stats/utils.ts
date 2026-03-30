@@ -1,32 +1,32 @@
-import { pointFrom, pointRotateRads } from "@excalidraw/math";
+import { pointFrom, pointRotateRads } from "@vidraw/math";
 
 import {
   getBoundTextElement,
   isBindingElement,
   unbindBindingElement,
-} from "@excalidraw/element";
-import { isFrameLikeElement } from "@excalidraw/element";
+} from "@vidraw/element";
+import { isFrameLikeElement } from "@vidraw/element";
 
 import {
   getSelectedGroupIds,
   getElementsInGroup,
   isInGroup,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { getFrameChildren } from "@excalidraw/element";
+import { getFrameChildren } from "@vidraw/element";
 
-import { updateBindings } from "@excalidraw/element";
-import { DRAGGING_THRESHOLD } from "@excalidraw/common";
+import { updateBindings } from "@vidraw/element";
+import { DRAGGING_THRESHOLD } from "@vidraw/common";
 
-import type { Radians } from "@excalidraw/math";
+import type { Radians } from "@vidraw/math";
 
 import type {
   ElementsMap,
   ExcalidrawElement,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/element/types";
 
-import type { Scene } from "@excalidraw/element";
+import type { Scene } from "@vidraw/element";
 
 import type { AppState } from "../../types";
 

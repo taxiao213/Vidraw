@@ -1,14 +1,10 @@
-import { Emitter } from "@excalidraw/common";
+import { Emitter } from "@vidraw/common";
 
-import {
-  CaptureUpdateAction,
-  StoreChange,
-  StoreDelta,
-} from "@excalidraw/element";
+import { CaptureUpdateAction, StoreChange, StoreDelta } from "@vidraw/element";
 
-import type { StoreSnapshot, Store } from "@excalidraw/element";
+import type { StoreSnapshot, Store } from "@vidraw/element";
 
-import type { SceneElementsMap } from "@excalidraw/element/types";
+import type { SceneElementsMap } from "@vidraw/element/types";
 
 import type { AppState } from "./types";
 

@@ -1,4 +1,4 @@
-import { exportToCanvas } from "@excalidraw/utils/export";
+import { exportToCanvas } from "@vidraw/utils/export";
 import React, { useEffect, useRef, useState } from "react";
 
 import {
@@ -7,9 +7,7 @@ import {
   isFirefox,
   EXPORT_SCALES,
   cloneJSON,
-} from "@excalidraw/common";
-
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+} from "@vidraw/common";
 
 import {
   actionExportWithDarkMode,
@@ -35,6 +33,8 @@ import { Tooltip } from "./Tooltip";
 import { FilledButton } from "./FilledButton";
 
 import "./ImageExportDialog.scss";
+
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
 
 import type { ActionManager } from "../actions/manager";
 

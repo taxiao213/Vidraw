@@ -7,7 +7,7 @@ import {
   pointFrom,
   pointRotateRads,
   type Radians,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
 import {
   BOUND_TEXT_PADDING,
@@ -24,23 +24,7 @@ import {
   invariant,
   applyDarkModeFilter,
   isSafari,
-} from "@excalidraw/common";
-
-import type {
-  AppState,
-  StaticCanvasAppState,
-  Zoom,
-  InteractiveCanvasAppState,
-  ElementsPendingErasure,
-  PendingExcalidrawElements,
-  NormalizedZoomValue,
-} from "@excalidraw/excalidraw/types";
-
-import type {
-  StaticCanvasRenderConfig,
-  RenderableElementsMap,
-  InteractiveCanvasRenderConfig,
-} from "@excalidraw/excalidraw/scene/types";
+} from "@vidraw/common";
 
 import { getElementAbsoluteCoords, getElementBounds } from "./bounds";
 import { getUncroppedImageElement } from "./cropElement";
@@ -67,6 +51,22 @@ import { getContainingFrame } from "./frame";
 import { getCornerRadius } from "./utils";
 
 import { ShapeCache } from "./shape";
+
+import type {
+  StaticCanvasRenderConfig,
+  RenderableElementsMap,
+  InteractiveCanvasRenderConfig,
+} from "@vidraw/excalidraw/scene/types";
+
+import type {
+  AppState,
+  StaticCanvasAppState,
+  Zoom,
+  InteractiveCanvasAppState,
+  ElementsPendingErasure,
+  PendingExcalidrawElements,
+  NormalizedZoomValue,
+} from "@vidraw/excalidraw/types";
 
 import type {
   ExcalidrawElement,

@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from "react";
 
-import { isShallowEqual } from "@excalidraw/common";
+import { isShallowEqual } from "@vidraw/common";
+
+import { isRenderThrottlingEnabled } from "../../reactUtils";
+import { renderStaticScene } from "../../renderer/staticScene";
 
 import type {
   NonDeletedExcalidrawElement,
   NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
-
-import { isRenderThrottlingEnabled } from "../../reactUtils";
-import { renderStaticScene } from "../../renderer/staticScene";
+} from "@vidraw/element/types";
 
 import type {
   RenderableElementsMap,

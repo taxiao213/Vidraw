@@ -3,13 +3,11 @@ import {
   DEFAULT_EXPORT_PADDING,
   EXPORT_SCALES,
   THEME,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { getNonDeletedElements } from "@excalidraw/element";
+import { getNonDeletedElements } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type { ExcalidrawElement, Theme } from "@excalidraw/element/types";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import { useEditorInterface } from "../components/App";
 import { CheckboxItem } from "../components/CheckboxItem";
@@ -32,6 +30,8 @@ import { getExportSize } from "../scene/export";
 import "../components/ToolIcon.scss";
 
 import { register } from "./register";
+
+import type { ExcalidrawElement, Theme } from "@vidraw/element/types";
 
 import type { JSONExportData } from "../data/json";
 

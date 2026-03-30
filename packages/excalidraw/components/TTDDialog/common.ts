@@ -1,19 +1,12 @@
-import {
-  DEFAULT_EXPORT_PADDING,
-  EDITOR_LS_KEYS,
-  THEME,
-} from "@excalidraw/common";
+import { DEFAULT_EXPORT_PADDING, EDITOR_LS_KEYS, THEME } from "@vidraw/common";
 
-import { convertToExcalidrawElements } from "@excalidraw/element";
+import { convertToExcalidrawElements } from "@vidraw/element";
 
-import { exportToCanvas } from "@excalidraw/utils";
-
-import type {
-  NonDeletedExcalidrawElement,
-  Theme,
-} from "@excalidraw/element/types";
+import { exportToCanvas } from "@vidraw/utils";
 
 import { EditorLocalStorage } from "../../data/EditorLocalStorage";
+
+import type { NonDeletedExcalidrawElement, Theme } from "@vidraw/element/types";
 
 import type { MermaidToExcalidrawLibProps } from "./types";
 

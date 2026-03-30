@@ -6,32 +6,7 @@ import {
   isShallowEqual,
   isTestEnv,
   randomInteger,
-} from "@excalidraw/common";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawFreeDrawElement,
-  ExcalidrawLinearElement,
-  ExcalidrawTextElement,
-  NonDeleted,
-  Ordered,
-  OrderedExcalidrawElement,
-  SceneElementsMap,
-} from "@excalidraw/element/types";
-
-import type {
-  DTO,
-  Mutable,
-  SubtypeOf,
-  ValueOf,
-} from "@excalidraw/common/utility-types";
-
-import type {
-  AppState,
-  ObservedAppState,
-  ObservedElementsAppState,
-  ObservedStandaloneAppState,
-} from "@excalidraw/excalidraw/types";
+} from "@vidraw/common";
 
 import { getObservedAppState } from "./store";
 
@@ -58,6 +33,29 @@ import { orderByFractionalIndex, syncMovedIndices } from "./fractionalIndex";
 import { StoreSnapshot } from "./store";
 
 import { Scene } from "./Scene";
+
+import type {
+  DTO,
+  Mutable,
+  SubtypeOf,
+  ValueOf,
+} from "@vidraw/common/utility-types";
+import type {
+  AppState,
+  ObservedAppState,
+  ObservedElementsAppState,
+  ObservedStandaloneAppState,
+} from "@vidraw/excalidraw/types";
+import type {
+  ExcalidrawElement,
+  ExcalidrawFreeDrawElement,
+  ExcalidrawLinearElement,
+  ExcalidrawTextElement,
+  NonDeleted,
+  Ordered,
+  OrderedExcalidrawElement,
+  SceneElementsMap,
+} from "@vidraw/element/types";
 
 import type { BindableProp, BindingProp } from "./binding";
 

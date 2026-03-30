@@ -1,7 +1,7 @@
 import React from "react";
 import { expect } from "vitest";
 
-import { reseed } from "@excalidraw/common";
+import { reseed } from "@vidraw/common";
 
 import { Excalidraw } from "../index";
 

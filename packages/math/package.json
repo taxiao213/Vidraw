@@ -1,5 +1,5 @@
 {
-  "name": "@excalidraw/math",
+  "name": "@vidraw/math",
   "version": "0.18.0",
   "type": "module",
   "types": "./dist/types/math/src/index.d.ts",
@@ -22,14 +22,14 @@
   "files": [
     "dist/*"
   ],
-  "description": "Excalidraw math functions",
+  "description": "Vidraw math functions",
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
   "keywords": [
-    "excalidraw",
-    "excalidraw-math",
+    "vidraw",
+    "vidraw-math",
     "math",
     "vector",
     "algebra",
@@ -61,6 +61,6 @@
     "build:esm": "rimraf dist && node ../../scripts/buildBase.js && yarn gen:types"
   },
   "dependencies": {
-    "@excalidraw/common": "0.18.0"
+    "@vidraw/common": "0.18.0"
   }
 }

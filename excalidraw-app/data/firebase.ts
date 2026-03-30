@@ -1,12 +1,9 @@
-import { reconcileElements } from "@excalidraw/excalidraw";
-import { MIME_TYPES, toBrandedType } from "@excalidraw/common";
-import { decompressData } from "@excalidraw/excalidraw/data/encode";
-import {
-  encryptData,
-  decryptData,
-} from "@excalidraw/excalidraw/data/encryption";
-import { restoreElements } from "@excalidraw/excalidraw/data/restore";
-import { getSceneVersion } from "@excalidraw/element";
+import { reconcileElements } from "@vidraw/excalidraw";
+import { MIME_TYPES, toBrandedType } from "@vidraw/common";
+import { decompressData } from "@vidraw/excalidraw/data/encode";
+import { encryptData, decryptData } from "@vidraw/excalidraw/data/encryption";
+import { restoreElements } from "@vidraw/excalidraw/data/restore";
+import { getSceneVersion } from "@vidraw/element";
 import { initializeApp } from "firebase/app";
 import {
   getFirestore,
@@ -17,22 +14,22 @@ import {
 } from "firebase/firestore";
 import { getStorage, ref, uploadBytes } from "firebase/storage";
 
-import type { RemoteExcalidrawElement } from "@excalidraw/excalidraw/data/reconcile";
+import { FILE_CACHE_MAX_AGE_SEC } from "../app_constants";
+
+import { getSyncableElements } from ".";
+
+import type { RemoteExcalidrawElement } from "@vidraw/excalidraw/data/reconcile";
 import type {
   ExcalidrawElement,
   FileId,
   OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/element/types";
 import type {
   AppState,
   BinaryFileData,
   BinaryFileMetadata,
   DataURL,
-} from "@excalidraw/excalidraw/types";
-
-import { FILE_CACHE_MAX_AGE_SEC } from "../app_constants";
-
-import { getSyncableElements } from ".";
+} from "@vidraw/excalidraw/types";
 
 import type { SyncableExcalidrawElement } from ".";
 import type Portal from "../collab/Portal";

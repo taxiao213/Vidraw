@@ -1,7 +1,4 @@
-import { arrayToMap, findIndex, findLastIndex } from "@excalidraw/common";
-
-import type { AppState } from "@excalidraw/excalidraw/types";
-import type { GlobalPoint } from "@excalidraw/math";
+import { arrayToMap, findIndex, findLastIndex } from "@vidraw/common";
 
 import { isFrameLikeElement, isTextElement } from "./typeChecks";
 import { getElementsInGroup } from "./groups";
@@ -9,6 +6,9 @@ import { syncMovedIndices } from "./fractionalIndex";
 import { getSelectedElements } from "./selection";
 import { getBoundTextElement, getContainerElement } from "./textElement";
 import { getHoveredElementForBinding } from "./collision";
+
+import type { GlobalPoint } from "@vidraw/math";
+import type { AppState } from "@vidraw/excalidraw/types";
 
 import type { Scene } from "./Scene";
 import type {

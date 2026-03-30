@@ -7,16 +7,14 @@ import React, {
   type KeyboardEventHandler,
 } from "react";
 
-import { type FontFamilyValues } from "@excalidraw/element/types";
+import { type FontFamilyValues } from "@vidraw/element/types";
 
 import {
   arrayToList,
   debounce,
   FONT_FAMILY,
   getFontFamilyString,
-} from "@excalidraw/common";
-
-import type { ValueOf } from "@excalidraw/common/utility-types";
+} from "@vidraw/common";
 
 import { Fonts } from "../../fonts";
 import { t } from "../../i18n";
@@ -44,6 +42,8 @@ import {
 } from "../icons";
 
 import { fontPickerKeyHandler } from "./keyboardNavHandlers";
+
+import type { ValueOf } from "@vidraw/common/utility-types";
 
 import type { JSX } from "react";
 import type { ExcalidrawFontFace } from "../../fonts/ExcalidrawFontFace";

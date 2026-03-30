@@ -1,13 +1,8 @@
 import React from "react";
 import { vi } from "vitest";
-import { KEYS, reseed } from "@excalidraw/common";
-import { bindBindingElement } from "@excalidraw/element";
-import "@excalidraw/utils/test-utils";
-
-import type {
-  ExcalidrawArrowElement,
-  NonDeleted,
-} from "@excalidraw/element/types";
+import { KEYS, reseed } from "@vidraw/common";
+import { bindBindingElement } from "@vidraw/element";
+import "@vidraw/utils/test-utils";
 
 import { Excalidraw } from "../index";
 import * as InteractiveCanvas from "../renderer/interactiveScene";
@@ -15,6 +10,8 @@ import * as StaticScene from "../renderer/staticScene";
 
 import { UI, Pointer, Keyboard } from "./helpers/ui";
 import { render, fireEvent, act, unmountComponent } from "./test-utils";
+
+import type { ExcalidrawArrowElement, NonDeleted } from "@vidraw/element/types";
 
 unmountComponent();
 

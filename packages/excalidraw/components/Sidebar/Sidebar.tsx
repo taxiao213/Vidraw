@@ -9,13 +9,7 @@ import React, {
   useCallback,
 } from "react";
 
-import {
-  CLASSES,
-  EVENT,
-  isDevEnv,
-  KEYS,
-  updateObject,
-} from "@excalidraw/common";
+import { CLASSES, EVENT, isDevEnv, KEYS, updateObject } from "@vidraw/common";
 
 import { useUIAppState } from "../../context/ui-appState";
 import { atom, useSetAtom } from "../../editor-jotai";

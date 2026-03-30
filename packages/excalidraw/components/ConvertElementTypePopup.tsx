@@ -5,9 +5,9 @@ import {
   getLinearElementSubType,
   mutateElement,
   updateElbowArrowPoints,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { pointFrom, pointRotateRads, type LocalPoint } from "@excalidraw/math";
+import { pointFrom, pointRotateRads, type LocalPoint } from "@vidraw/math";
 
 import {
   hasBoundTextElement,
@@ -16,21 +16,21 @@ import {
   isElbowArrow,
   isLinearElement,
   isUsingAdaptiveRadius,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
 import {
   getCommonBoundingBox,
   getElementAbsoluteCoords,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
 import {
   getBoundTextElement,
   getBoundTextMaxHeight,
   getBoundTextMaxWidth,
   redrawTextBoundingBox,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { wrapText } from "@excalidraw/element";
+import { wrapText } from "@vidraw/element";
 
 import {
   assertNever,
@@ -42,38 +42,17 @@ import {
   ROUNDNESS,
   sceneCoordsToViewportCoords,
   updateActiveTool,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { measureText } from "@excalidraw/element";
+import { measureText } from "@vidraw/element";
 
-import { LinearElementEditor } from "@excalidraw/element";
+import { LinearElementEditor } from "@vidraw/element";
 
-import {
-  newArrowElement,
-  newElement,
-  newLinearElement,
-} from "@excalidraw/element";
+import { newArrowElement, newElement, newLinearElement } from "@vidraw/element";
 
-import { ShapeCache } from "@excalidraw/element";
+import { ShapeCache } from "@vidraw/element";
 
-import { updateBindings } from "@excalidraw/element";
-
-import type {
-  ConvertibleGenericTypes,
-  ConvertibleLinearTypes,
-  ConvertibleTypes,
-  ExcalidrawDiamondElement,
-  ExcalidrawElement,
-  ExcalidrawEllipseElement,
-  ExcalidrawLinearElement,
-  ExcalidrawRectangleElement,
-  ExcalidrawSelectionElement,
-  ExcalidrawTextContainer,
-  ExcalidrawTextElementWithContainer,
-  FixedSegment,
-} from "@excalidraw/element/types";
-
-import type { Scene } from "@excalidraw/element";
+import { updateBindings } from "@vidraw/element";
 
 import { trackEvent } from "../analytics";
 import { atom } from "../editor-jotai";
@@ -89,6 +68,23 @@ import {
   roundArrowIcon,
   sharpArrowIcon,
 } from "./icons";
+
+import type {
+  ConvertibleGenericTypes,
+  ConvertibleLinearTypes,
+  ConvertibleTypes,
+  ExcalidrawDiamondElement,
+  ExcalidrawElement,
+  ExcalidrawEllipseElement,
+  ExcalidrawLinearElement,
+  ExcalidrawRectangleElement,
+  ExcalidrawSelectionElement,
+  ExcalidrawTextContainer,
+  ExcalidrawTextElementWithContainer,
+  FixedSegment,
+} from "@vidraw/element/types";
+
+import type { Scene } from "@vidraw/element";
 
 import type App from "./App";
 

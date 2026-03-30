@@ -7,11 +7,7 @@ import {
   findLastIndex,
   getUpdatedTimestamp,
   isTestEnv,
-} from "@excalidraw/common";
-
-import type { Mutable } from "@excalidraw/common/utility-types";
-
-import type { AppState } from "@excalidraw/excalidraw/types";
+} from "@vidraw/common";
 
 import {
   getElementsInGroup,
@@ -37,6 +33,10 @@ import {
 import { getBoundTextElement, getContainerElement } from "./textElement";
 
 import { fixDuplicatedBindingsAfterDuplication } from "./binding";
+
+import type { AppState } from "@vidraw/excalidraw/types";
+
+import type { Mutable } from "@vidraw/common/utility-types";
 
 import type {
   ElementsMap,

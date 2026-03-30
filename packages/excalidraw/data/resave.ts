@@ -1,11 +1,13 @@
-import type { MaybePromise } from "@excalidraw/common/utility-types";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-
 import { getFileHandleType, isImageFileHandleType } from "./blob";
 
 // eslint-disable-next-line @typescript-eslint/no-restricted-imports
 import { exportCanvas, prepareElementsForExport } from ".";
+
+import type { MaybePromise } from "@vidraw/common/utility-types";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
+
+// eslint-disable-next-line @typescript-eslint/no-restricted-imports
 
 import type { AppState, BinaryFiles } from "../types";
 

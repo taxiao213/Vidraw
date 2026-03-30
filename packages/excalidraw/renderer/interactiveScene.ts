@@ -8,7 +8,7 @@ import {
   bezierEquation,
   pointRotateRads,
   pointDistance,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
 import {
   arrayToMap,
@@ -18,7 +18,7 @@ import {
   getFeatureFlag,
   invariant,
   THEME,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import {
   deconstructDiamondElement,
@@ -42,43 +42,22 @@ import {
   isTextElement,
   LinearElementEditor,
   getActiveTextElement,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { renderSelectionElement } from "@excalidraw/element";
+import { renderSelectionElement } from "@vidraw/element";
 
 import {
   getElementsInGroup,
   getSelectedGroupIds,
   isSelectedViaGroup,
   selectGroupsFromGivenElements,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { getCommonBounds, getElementAbsoluteCoords } from "@excalidraw/element";
+import { getCommonBounds, getElementAbsoluteCoords } from "@vidraw/element";
 import {
   getGlobalFixedPointForBindableElement,
   isFocusPointVisible,
-} from "@excalidraw/element";
-
-import type { EditorInterface } from "@excalidraw/common";
-
-import type {
-  TransformHandles,
-  TransformHandleType,
-} from "@excalidraw/element";
-
-import type {
-  ElementsMap,
-  ExcalidrawArrowElement,
-  ExcalidrawBindableElement,
-  ExcalidrawElement,
-  ExcalidrawFrameLikeElement,
-  ExcalidrawImageElement,
-  ExcalidrawLinearElement,
-  ExcalidrawTextElement,
-  GroupId,
-  NonDeleted,
-  NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
+} from "@vidraw/element";
 
 import { renderSnaps } from "../renderer/renderSnaps";
 import { roundRect } from "../renderer/roundRect";
@@ -100,6 +79,22 @@ import {
   getNormalizedCanvasDimensions,
   strokeRectWithRotation_simple,
 } from "./helpers";
+
+import type { TransformHandles, TransformHandleType } from "@vidraw/element";
+import type {
+  ElementsMap,
+  ExcalidrawArrowElement,
+  ExcalidrawBindableElement,
+  ExcalidrawElement,
+  ExcalidrawFrameLikeElement,
+  ExcalidrawImageElement,
+  ExcalidrawLinearElement,
+  ExcalidrawTextElement,
+  GroupId,
+  NonDeleted,
+  NonDeletedSceneElementsMap,
+} from "@vidraw/element/types";
+import type { EditorInterface } from "@vidraw/common";
 
 import type {
   AppState,

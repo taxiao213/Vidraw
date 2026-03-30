@@ -1,21 +1,13 @@
-import { degreesToRadians, pointFrom, pointRotateRads } from "@excalidraw/math";
+import { degreesToRadians, pointFrom, pointRotateRads } from "@vidraw/math";
 import { act, fireEvent, queryByTestId } from "@testing-library/react";
 import React from "react";
 import { vi } from "vitest";
 
-import { setDateTimeForTests, reseed } from "@excalidraw/common";
+import { setDateTimeForTests, reseed } from "@vidraw/common";
 
-import { isInGroup } from "@excalidraw/element";
+import { isInGroup } from "@vidraw/element";
 
-import { isTextElement } from "@excalidraw/element";
-
-import type { Degrees } from "@excalidraw/math";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawLinearElement,
-  ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+import { isTextElement } from "@vidraw/element";
 
 import { Excalidraw, getCommonBounds } from "../..";
 import { actionGroup } from "../../actions";
@@ -32,6 +24,14 @@ import {
 } from "../../tests/test-utils";
 
 import { getStepSizedValue } from "./utils";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawLinearElement,
+  ExcalidrawTextElement,
+} from "@vidraw/element/types";
+
+import type { Degrees } from "@vidraw/math";
 
 const { h } = window;
 const mouse = new Pointer("mouse");

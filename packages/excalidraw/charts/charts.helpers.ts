@@ -1,4 +1,4 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 
 import {
   COLOR_PALETTE,
@@ -11,7 +11,7 @@ import {
   getFontString,
   getLineHeight,
   ROUGHNESS,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import {
   getApproxMinLineWidth,
@@ -20,13 +20,7 @@ import {
   newLinearElement,
   newTextElement,
   wrapText,
-} from "@excalidraw/element";
-
-import type {
-  ChartType,
-  ExcalidrawTextElement,
-} from "@excalidraw/element/types";
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+} from "@vidraw/element";
 
 import {
   BAR_GAP,
@@ -59,6 +53,9 @@ import {
   type CartesianChartLayout,
   type CartesianChartType,
 } from "./charts.constants";
+
+import type { ChartType, ExcalidrawTextElement } from "@vidraw/element/types";
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
 
 import type {
   ChartElements,

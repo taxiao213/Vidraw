@@ -1,20 +1,16 @@
-import { getNonDeletedElements } from "@excalidraw/element";
+import { getNonDeletedElements } from "@vidraw/element";
 
-import { isFrameLikeElement } from "@excalidraw/element";
+import { isFrameLikeElement } from "@vidraw/element";
 
-import { updateFrameMembershipOfSelectedElements } from "@excalidraw/element";
+import { updateFrameMembershipOfSelectedElements } from "@vidraw/element";
 
-import { KEYS, arrayToMap } from "@excalidraw/common";
+import { KEYS, arrayToMap } from "@vidraw/common";
 
-import { alignElements } from "@excalidraw/element";
+import { alignElements } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
+import { CaptureUpdateAction } from "@vidraw/element";
 
-import { getSelectedElementsByGroup } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { Alignment } from "@excalidraw/element";
+import { getSelectedElementsByGroup } from "@vidraw/element";
 
 import { ToolButton } from "../components/ToolButton";
 import {
@@ -33,6 +29,10 @@ import { isSomeElementSelected } from "../scene";
 import { getShortcutKey } from "../shortcut";
 
 import { register } from "./register";
+
+import type { Alignment } from "@vidraw/element";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 import type { AppClassProperties, AppState, UIAppState } from "../types";
 

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { EVENT } from "@excalidraw/common";
+import { EVENT } from "@vidraw/common";
 
 export function useOutsideClick<T extends HTMLElement>(
   ref: React.RefObject<T | null>,

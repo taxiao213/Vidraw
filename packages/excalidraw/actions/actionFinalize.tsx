@@ -1,18 +1,18 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 
-import { bindOrUnbindBindingElement } from "@excalidraw/element/binding";
+import { bindOrUnbindBindingElement } from "@vidraw/element/binding";
 import {
   isValidPolygon,
   LinearElementEditor,
   newElementWith,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
 import {
   isBindingElement,
   isFreeDrawElement,
   isLinearElement,
   isLineElement,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
 import {
   KEYS,
@@ -20,20 +20,12 @@ import {
   invariant,
   shouldRotateWithDiscreteAngle,
   updateActiveTool,
-} from "@excalidraw/common";
-import { isPathALoop } from "@excalidraw/element";
+} from "@vidraw/common";
+import { isPathALoop } from "@vidraw/element";
 
-import { isInvisiblySmallElement } from "@excalidraw/element";
+import { isInvisiblySmallElement } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type { GlobalPoint, LocalPoint } from "@excalidraw/math";
-import type {
-  ExcalidrawElement,
-  ExcalidrawLinearElement,
-  NonDeleted,
-  PointsPositionUpdates,
-} from "@excalidraw/element/types";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import { t } from "../i18n";
 import { resetCursor } from "../cursor";
@@ -41,6 +33,14 @@ import { done } from "../components/icons";
 import { ToolButton } from "../components/ToolButton";
 
 import { register } from "./register";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawLinearElement,
+  NonDeleted,
+  PointsPositionUpdates,
+} from "@vidraw/element/types";
+import type { GlobalPoint, LocalPoint } from "@vidraw/math";
 
 import type { AppState } from "../types";
 

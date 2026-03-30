@@ -1,4 +1,4 @@
-import { normalizeInputColor } from "@excalidraw/common";
+import { normalizeInputColor } from "@vidraw/common";
 
 describe("normalizeInputColor", () => {
   describe("hex colors", () => {

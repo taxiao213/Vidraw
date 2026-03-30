@@ -1,23 +1,20 @@
-import {
-  getBoundTextElement,
-  redrawTextBoundingBox,
-} from "@excalidraw/element";
-import { hasBoundTextElement, isTextElement } from "@excalidraw/element";
+import { getBoundTextElement, redrawTextBoundingBox } from "@vidraw/element";
+import { hasBoundTextElement, isTextElement } from "@vidraw/element";
 
-import { isInGroup } from "@excalidraw/element";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawTextElement,
-  NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
-
-import type { Scene } from "@excalidraw/element";
+import { isInGroup } from "@vidraw/element";
 
 import { fontSizeIcon } from "../icons";
 
 import StatsDragInput from "./DragInput";
 import { getStepSizedValue } from "./utils";
+
+import type { Scene } from "@vidraw/element";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawTextElement,
+  NonDeletedSceneElementsMap,
+} from "@vidraw/element/types";
 
 import type { DragInputCallbackType } from "./DragInput";
 import type { AppState } from "../../types";

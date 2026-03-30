@@ -4,11 +4,11 @@ import type {
   throttleRAF,
   MIME_TYPES,
   EditorInterface,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import type { LinearElementEditor } from "@excalidraw/element";
+import type { LinearElementEditor } from "@vidraw/element";
 
-import type { MaybeTransformHandleType } from "@excalidraw/element";
+import type { MaybeTransformHandleType } from "@vidraw/element";
 
 import type {
   PointerType,
@@ -33,21 +33,21 @@ import type {
   ExcalidrawNonSelectionElement,
   BindMode,
   ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/element/types";
 
 import type {
   Merge,
   MaybePromise,
   ValueOf,
   MakeBrand,
-} from "@excalidraw/common/utility-types";
+} from "@vidraw/common/utility-types";
 
 import type {
   CaptureUpdateActionType,
   DurableIncrement,
   EphemeralIncrement,
-} from "@excalidraw/element";
-import type { GlobalPoint } from "@excalidraw/math";
+} from "@vidraw/element";
+import type { GlobalPoint } from "@vidraw/math";
 
 import type { Action } from "./actions/types";
 import type { Spreadsheet } from "./charts";

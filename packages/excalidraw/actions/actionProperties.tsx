@@ -1,4 +1,4 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 
 import { useEffect, useMemo, useRef, useState } from "react";
 
@@ -23,25 +23,22 @@ import {
   reduceToCommonValue,
   invariant,
   FONT_SIZES,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { canBecomePolygon, getNonDeletedElements } from "@excalidraw/element";
+import { canBecomePolygon, getNonDeletedElements } from "@vidraw/element";
 
 import {
   bindBindingElement,
   calculateFixedPointForElbowArrowBinding,
   updateBoundElements,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { LinearElementEditor } from "@excalidraw/element";
+import { LinearElementEditor } from "@vidraw/element";
 
-import { newElementWith } from "@excalidraw/element";
-import { getArrowheadForPicker } from "@excalidraw/element";
+import { newElementWith } from "@vidraw/element";
+import { getArrowheadForPicker } from "@vidraw/element";
 
-import {
-  getBoundTextElement,
-  redrawTextBoundingBox,
-} from "@excalidraw/element";
+import { getBoundTextElement, redrawTextBoundingBox } from "@vidraw/element";
 
 import {
   isArrowElement,
@@ -51,35 +48,17 @@ import {
   isLineElement,
   isTextElement,
   isUsingAdaptiveRadius,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { hasStrokeColor } from "@excalidraw/element";
+import { hasStrokeColor } from "@vidraw/element";
 
 import {
   updateElbowArrowPoints,
   CaptureUpdateAction,
   toggleLinePolygonState,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { deriveStylesPanelMode } from "@excalidraw/common";
-
-import type { LocalPoint, Radians } from "@excalidraw/math";
-
-import type {
-  Arrowhead,
-  ElementsMap,
-  ExcalidrawBindableElement,
-  ExcalidrawElement,
-  ExcalidrawLinearElement,
-  ExcalidrawTextElement,
-  FontFamilyValues,
-  TextAlign,
-  VerticalAlign,
-} from "@excalidraw/element/types";
-
-import type { Scene } from "@excalidraw/element";
-
-import type { CaptureUpdateActionType } from "@excalidraw/element";
+import { deriveStylesPanelMode } from "@vidraw/common";
 
 import { trackEvent } from "../analytics";
 import { RadioSelection } from "../components/RadioSelection";
@@ -150,6 +129,22 @@ import {
 import { getShortcutKey } from "../shortcut";
 
 import { register } from "./register";
+
+import type { CaptureUpdateActionType } from "@vidraw/element";
+
+import type {
+  Arrowhead,
+  ElementsMap,
+  ExcalidrawBindableElement,
+  ExcalidrawElement,
+  ExcalidrawLinearElement,
+  ExcalidrawTextElement,
+  FontFamilyValues,
+  TextAlign,
+  VerticalAlign,
+} from "@vidraw/element/types";
+import type { Scene } from "@vidraw/element";
+import type { LocalPoint, Radians } from "@vidraw/math";
 
 import type { AppClassProperties, AppState, Primitive } from "../types";
 

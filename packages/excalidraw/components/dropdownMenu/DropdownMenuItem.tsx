@@ -1,10 +1,8 @@
 import React from "react";
 
-import { THEME } from "@excalidraw/common";
+import { THEME } from "@vidraw/common";
 
 import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui";
-
-import type { ValueOf } from "@excalidraw/common/utility-types";
 
 import { useExcalidrawAppState } from "../App";
 
@@ -13,6 +11,8 @@ import {
   useHandleDropdownMenuItemSelect,
 } from "./common";
 import MenuItemContent from "./DropdownMenuItemContent";
+
+import type { ValueOf } from "@vidraw/common/utility-types";
 
 import type { JSX } from "react";
 

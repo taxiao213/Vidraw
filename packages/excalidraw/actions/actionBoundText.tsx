@@ -5,20 +5,20 @@ import {
   VERTICAL_ALIGN,
   arrayToMap,
   getFontString,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 import {
   getOriginalContainerHeightFromCache,
   isBoundToContainer,
   resetOriginalContainerCache,
   updateOriginalContainerCache,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
 import {
   computeBoundTextPosition,
   computeContainerDimensionForBoundText,
   getBoundTextElement,
   redrawTextBoundingBox,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
 import {
   hasBoundTextElement,
@@ -26,28 +26,28 @@ import {
   isTextBindableContainer,
   isTextElement,
   isUsingAdaptiveRadius,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { measureText } from "@excalidraw/element";
+import { measureText } from "@vidraw/element";
 
-import { syncMovedIndices } from "@excalidraw/element";
+import { syncMovedIndices } from "@vidraw/element";
 
-import { newElement } from "@excalidraw/element";
+import { newElement } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
+import { CaptureUpdateAction } from "@vidraw/element";
+
+import { register } from "./register";
 
 import type {
   ExcalidrawElement,
   ExcalidrawLinearElement,
   ExcalidrawTextContainer,
   ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/element/types";
 
-import type { Mutable } from "@excalidraw/common/utility-types";
+import type { Mutable } from "@vidraw/common/utility-types";
 
-import type { Radians } from "@excalidraw/math";
-
-import { register } from "./register";
+import type { Radians } from "@vidraw/math";
 
 import type { AppState } from "../types";
 

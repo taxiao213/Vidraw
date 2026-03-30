@@ -7,18 +7,18 @@ import {
   useEditorInterface,
   ExcalidrawAPIProvider,
   useExcalidrawAPI,
-} from "@excalidraw/excalidraw";
-import { trackEvent } from "@excalidraw/excalidraw/analytics";
-import { getDefaultAppState } from "@excalidraw/excalidraw/appState";
+} from "@vidraw/excalidraw";
+import { trackEvent } from "@vidraw/excalidraw/analytics";
+import { getDefaultAppState } from "@vidraw/excalidraw/appState";
 import {
   CommandPalette,
   DEFAULT_CATEGORIES,
-} from "@excalidraw/excalidraw/components/CommandPalette/CommandPalette";
-import { ErrorDialog } from "@excalidraw/excalidraw/components/ErrorDialog";
-import { OverwriteConfirmDialog } from "@excalidraw/excalidraw/components/OverwriteConfirm/OverwriteConfirm";
-import { openConfirmModal } from "@excalidraw/excalidraw/components/OverwriteConfirm/OverwriteConfirmState";
-import { ShareableLinkDialog } from "@excalidraw/excalidraw/components/ShareableLinkDialog";
-import Trans from "@excalidraw/excalidraw/components/Trans";
+} from "@vidraw/excalidraw/components/CommandPalette/CommandPalette";
+import { ErrorDialog } from "@vidraw/excalidraw/components/ErrorDialog";
+import { OverwriteConfirmDialog } from "@vidraw/excalidraw/components/OverwriteConfirm/OverwriteConfirm";
+import { openConfirmModal } from "@vidraw/excalidraw/components/OverwriteConfirm/OverwriteConfirmState";
+import { ShareableLinkDialog } from "@vidraw/excalidraw/components/ShareableLinkDialog";
+import Trans from "@vidraw/excalidraw/components/Trans";
 import {
   APP_NAME,
   EVENT,
@@ -32,11 +32,11 @@ import {
   resolvablePromise,
   isRunningInIframe,
   isDevEnv,
-} from "@excalidraw/common";
-import polyfill from "@excalidraw/excalidraw/polyfill";
+} from "@vidraw/common";
+import polyfill from "@vidraw/excalidraw/polyfill";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { loadFromBlob } from "@excalidraw/excalidraw/data/blob";
-import { t } from "@excalidraw/excalidraw/i18n";
+import { loadFromBlob } from "@vidraw/excalidraw/data/blob";
+import { t } from "@vidraw/excalidraw/i18n";
 
 import {
   GithubIcon,
@@ -47,38 +47,20 @@ import {
   exportToPlus,
   share,
   youtubeIcon,
-} from "@excalidraw/excalidraw/components/icons";
-import { isElementLink } from "@excalidraw/element";
+} from "@vidraw/excalidraw/components/icons";
+import { isElementLink } from "@vidraw/element";
 import {
   bumpElementVersions,
   restoreAppState,
   restoreElements,
-} from "@excalidraw/excalidraw/data/restore";
-import { newElementWith } from "@excalidraw/element";
-import { isInitializedImageElement } from "@excalidraw/element";
+} from "@vidraw/excalidraw/data/restore";
+import { newElementWith } from "@vidraw/element";
+import { isInitializedImageElement } from "@vidraw/element";
 import clsx from "clsx";
 import {
   parseLibraryTokensFromUrl,
   useHandleLibrary,
-} from "@excalidraw/excalidraw/data/library";
-
-import type { RemoteExcalidrawElement } from "@excalidraw/excalidraw/data/reconcile";
-import type { RestoredDataState } from "@excalidraw/excalidraw/data/restore";
-import type {
-  FileId,
-  NonDeletedExcalidrawElement,
-  OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
-import type {
-  AppState,
-  ExcalidrawImperativeAPI,
-  BinaryFiles,
-  ExcalidrawInitialDataState,
-  UIAppState,
-  ExcalidrawProps,
-} from "@excalidraw/excalidraw/types";
-import type { ResolutionType } from "@excalidraw/common/utility-types";
-import type { ResolvablePromise } from "@excalidraw/common/utils";
+} from "@vidraw/excalidraw/data/library";
 
 import CustomStats from "./CustomStats";
 import {
@@ -147,6 +129,30 @@ import "./index.scss";
 
 import { ExcalidrawPlusPromoBanner } from "./components/ExcalidrawPlusPromoBanner";
 import { AppSidebar } from "./components/AppSidebar";
+import { CameraPreview } from "./components/CameraPreview";
+import { CameraToolbar } from "./components/CameraToolbar";
+import { RecordingOverlay } from "./components/RecordingOverlay";
+import { RecordingProgress } from "./components/RecordingProgress";
+
+import "./components/RecordingOverlay.scss";
+
+import type { RemoteExcalidrawElement } from "@vidraw/excalidraw/data/reconcile";
+import type { RestoredDataState } from "@vidraw/excalidraw/data/restore";
+import type {
+  FileId,
+  NonDeletedExcalidrawElement,
+  OrderedExcalidrawElement,
+} from "@vidraw/element/types";
+import type {
+  AppState,
+  ExcalidrawImperativeAPI,
+  BinaryFiles,
+  ExcalidrawInitialDataState,
+  UIAppState,
+  ExcalidrawProps,
+} from "@vidraw/excalidraw/types";
+import type { ResolutionType } from "@vidraw/common/utility-types";
+import type { ResolvablePromise } from "@vidraw/common/utils";
 
 import type { CollabAPI } from "./collab/Collab";
 
@@ -1058,6 +1064,12 @@ const ExcalidrawWrapper = () => {
         />
 
         <AppSidebar />
+
+        <CameraPreview />
+        <CameraToolbar />
+
+        <RecordingOverlay />
+        <RecordingProgress />
 
         {errorMessage && (
           <ErrorDialog onClose={() => setErrorMessage("")}>

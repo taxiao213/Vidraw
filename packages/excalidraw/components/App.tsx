@@ -15,7 +15,7 @@ import {
   vectorSubtract,
   vectorDot,
   vectorNormalize,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
 import {
   COLOR_PALETTE,
@@ -110,7 +110,7 @@ import {
   setDesktopUIMode,
   isSelectionLikeTool,
   oneOf,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import {
   getObservedAppState,
@@ -258,37 +258,7 @@ import {
   maybeHandleArrowPointlikeDrag,
   getUncroppedWidthAndHeight,
   getActiveTextElement,
-} from "@excalidraw/element";
-
-import type { GlobalPoint, LocalPoint, Radians } from "@excalidraw/math";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawFreeDrawElement,
-  ExcalidrawGenericElement,
-  ExcalidrawLinearElement,
-  ExcalidrawTextElement,
-  NonDeleted,
-  InitializedExcalidrawImageElement,
-  ExcalidrawImageElement,
-  FileId,
-  NonDeletedExcalidrawElement,
-  ExcalidrawTextContainer,
-  ExcalidrawFrameLikeElement,
-  ExcalidrawMagicFrameElement,
-  ExcalidrawIframeLikeElement,
-  IframeData,
-  ExcalidrawIframeElement,
-  ExcalidrawEmbeddableElement,
-  Ordered,
-  MagicGenerationData,
-  ExcalidrawArrowElement,
-  ExcalidrawElbowArrowElement,
-  SceneElementsMap,
-  ExcalidrawBindableElement,
-} from "@excalidraw/element/types";
-
-import type { Mutable, ValueOf } from "@excalidraw/common/utility-types";
+} from "@vidraw/element";
 
 import {
   actionAddToLibrary,
@@ -456,6 +426,34 @@ import { AppStateObserver, type OnStateChange } from "./AppStateObserver";
 import { findShapeByKey } from "./shapes";
 
 import UnlockPopup from "./UnlockPopup";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawFreeDrawElement,
+  ExcalidrawGenericElement,
+  ExcalidrawLinearElement,
+  ExcalidrawTextElement,
+  NonDeleted,
+  InitializedExcalidrawImageElement,
+  ExcalidrawImageElement,
+  FileId,
+  NonDeletedExcalidrawElement,
+  ExcalidrawTextContainer,
+  ExcalidrawFrameLikeElement,
+  ExcalidrawMagicFrameElement,
+  ExcalidrawIframeLikeElement,
+  IframeData,
+  ExcalidrawIframeElement,
+  ExcalidrawEmbeddableElement,
+  Ordered,
+  MagicGenerationData,
+  ExcalidrawArrowElement,
+  ExcalidrawElbowArrowElement,
+  SceneElementsMap,
+  ExcalidrawBindableElement,
+} from "@vidraw/element/types";
+import type { Mutable, ValueOf } from "@vidraw/common/utility-types";
+import type { GlobalPoint, LocalPoint, Radians } from "@vidraw/math";
 
 import type { ExcalidrawLibraryIds } from "../data/types";
 
@@ -4541,7 +4539,7 @@ class App extends React.Component<AppProps, AppState> {
        *  - `CaptureUpdateAction.NEVER`: Updates never make it to undo/redo stack. Use for remote updates or scene initialization.
        *  - `CaptureUpdateAction.EVENTUALLY`: Updates will be eventually be captured as part of a future increment.
        *
-       * Check [API docs](https://docs.excalidraw.com/docs/@excalidraw/excalidraw/api/props/excalidraw-api#captureUpdate) for more details.
+       * Check [API docs](https://docs.excalidraw.com/docs/@vidraw/excalidraw/api/props/excalidraw-api#captureUpdate) for more details.
        *
        * @default CaptureUpdateAction.EVENTUALLY
        */

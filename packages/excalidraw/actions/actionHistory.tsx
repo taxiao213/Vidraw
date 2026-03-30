@@ -4,13 +4,11 @@ import {
   matchKey,
   arrayToMap,
   MOBILE_ACTION_BUTTON_BG,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
+import { CaptureUpdateAction } from "@vidraw/element";
 
-import { orderByFractionalIndex } from "@excalidraw/element";
-
-import type { SceneElementsMap } from "@excalidraw/element/types";
+import { orderByFractionalIndex } from "@vidraw/element";
 
 import { ToolButton } from "../components/ToolButton";
 import { UndoIcon, RedoIcon } from "../components/icons";
@@ -19,6 +17,8 @@ import { useEmitter } from "../hooks/useEmitter";
 import { t } from "../i18n";
 
 import { useStylesPanelMode } from "../components/App";
+
+import type { SceneElementsMap } from "@vidraw/element/types";
 
 import type { History } from "../history";
 import type { AppClassProperties, AppState } from "../types";

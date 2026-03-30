@@ -1,15 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
 
-import { normalizeLink, KEYS } from "@excalidraw/common";
+import { normalizeLink, KEYS } from "@vidraw/common";
 
 import {
   defaultGetElementLinkFromSelection,
   getLinkIdAndTypeFromSelection,
-} from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { Scene } from "@excalidraw/element";
+} from "@vidraw/element";
 
 import { t } from "../i18n";
 import { getSelectedElements } from "../scene";
@@ -20,6 +16,10 @@ import { ToolButton } from "./ToolButton";
 import { TrashIcon } from "./icons";
 
 import "./ElementLinkDialog.scss";
+
+import type { Scene } from "@vidraw/element";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 import type { AppProps, AppState, UIAppState } from "../types";
 const ElementLinkDialog = ({

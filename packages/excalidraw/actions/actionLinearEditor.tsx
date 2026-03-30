@@ -1,19 +1,7 @@
-import {
-  isElbowArrow,
-  isLinearElement,
-  isLineElement,
-} from "@excalidraw/element";
-import { arrayToMap, invariant } from "@excalidraw/common";
+import { isElbowArrow, isLinearElement, isLineElement } from "@vidraw/element";
+import { arrayToMap, invariant } from "@vidraw/common";
 
-import {
-  toggleLinePolygonState,
-  CaptureUpdateAction,
-} from "@excalidraw/element";
-
-import type {
-  ExcalidrawLinearElement,
-  ExcalidrawLineElement,
-} from "@excalidraw/element/types";
+import { toggleLinePolygonState, CaptureUpdateAction } from "@vidraw/element";
 
 import { DEFAULT_CATEGORIES } from "../components/CommandPalette/CommandPalette";
 import { ToolButton } from "../components/ToolButton";
@@ -25,6 +13,11 @@ import { ButtonIcon } from "../components/ButtonIcon";
 import { newElementWith } from "../../element/src/mutateElement";
 
 import { register } from "./register";
+
+import type {
+  ExcalidrawLinearElement,
+  ExcalidrawLineElement,
+} from "@vidraw/element/types";
 
 export const actionToggleLinearEditor = register({
   name: "toggleLinearEditor",

@@ -1,4 +1,4 @@
-import { pointFrom, type GlobalPoint } from "@excalidraw/math";
+import { pointFrom, type GlobalPoint } from "@vidraw/math";
 import clsx from "clsx";
 import {
   useCallback,
@@ -8,15 +8,15 @@ import {
   useState,
 } from "react";
 
-import { EVENT, HYPERLINK_TOOLTIP_DELAY, KEYS } from "@excalidraw/common";
+import { EVENT, HYPERLINK_TOOLTIP_DELAY, KEYS } from "@vidraw/common";
 
-import { getElementAbsoluteCoords } from "@excalidraw/element";
+import { getElementAbsoluteCoords } from "@vidraw/element";
 
-import { hitElementBoundingBox } from "@excalidraw/element";
+import { hitElementBoundingBox } from "@vidraw/element";
 
-import { isElementLink } from "@excalidraw/element";
+import { isElementLink } from "@vidraw/element";
 
-import { getEmbedLink, embeddableURLValidator } from "@excalidraw/element";
+import { getEmbedLink, embeddableURLValidator } from "@vidraw/element";
 
 import {
   sceneCoordsToViewportCoords,
@@ -24,17 +24,9 @@ import {
   wrapEvent,
   isLocalLink,
   normalizeLink,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { isEmbeddableElement } from "@excalidraw/element";
-
-import type { Scene } from "@excalidraw/element";
-
-import type {
-  ElementsMap,
-  ExcalidrawEmbeddableElement,
-  NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+import { isEmbeddableElement } from "@vidraw/element";
 
 import { trackEvent } from "../../analytics";
 import { getTooltipDiv, updateTooltipPosition } from "../../components/Tooltip";
@@ -49,6 +41,14 @@ import { getSelectedElements } from "../../scene";
 import { getLinkHandleFromCoords } from "./helpers";
 
 import "./Hyperlink.scss";
+
+import type { Scene } from "@vidraw/element";
+
+import type {
+  ElementsMap,
+  ExcalidrawEmbeddableElement,
+  NonDeletedExcalidrawElement,
+} from "@vidraw/element/types";
 
 import type { AppState, ExcalidrawProps, UIAppState } from "../../types";
 

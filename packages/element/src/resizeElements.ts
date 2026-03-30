@@ -5,20 +5,14 @@ import {
   pointRotateRads,
   type Radians,
   type LocalPoint,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
 import {
   MIN_FONT_SIZE,
   SHIFT_LOCKING_ANGLE,
   rescalePoints,
   getFontString,
-} from "@excalidraw/common";
-
-import type { GlobalPoint } from "@excalidraw/math";
-
-import type { PointerDownState } from "@excalidraw/excalidraw/types";
-
-import type { Mutable } from "@excalidraw/common/utility-types";
+} from "@vidraw/common";
 
 import {
   getArrowLocalFixedPoints,
@@ -61,6 +55,10 @@ import {
 } from "./typeChecks";
 
 import { isInGroup } from "./groups";
+
+import type { PointerDownState } from "@vidraw/excalidraw/types";
+import type { Mutable } from "@vidraw/common/utility-types";
+import type { GlobalPoint } from "@vidraw/math";
 
 import type { Scene } from "./Scene";
 

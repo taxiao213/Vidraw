@@ -13,41 +13,28 @@ import {
   getFontString,
   toBrandedType,
   applyDarkModeFilter,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { getCommonBounds, getElementAbsoluteCoords } from "@excalidraw/element";
+import { getCommonBounds, getElementAbsoluteCoords } from "@vidraw/element";
 
-import {
-  getInitializedImageElements,
-  updateImageCache,
-} from "@excalidraw/element";
+import { getInitializedImageElements, updateImageCache } from "@vidraw/element";
 
-import { newElementWith } from "@excalidraw/element";
+import { newElementWith } from "@vidraw/element";
 
-import { isFrameLikeElement } from "@excalidraw/element";
+import { isFrameLikeElement } from "@vidraw/element";
 
 import {
   getElementsOverlappingFrame,
   getFrameLikeElements,
   getFrameLikeTitle,
   getRootElements,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { syncInvalidIndices } from "@excalidraw/element";
+import { syncInvalidIndices } from "@vidraw/element";
 
-import { type Mutable } from "@excalidraw/common/utility-types";
+import { type Mutable } from "@vidraw/common/utility-types";
 
-import { newTextElement } from "@excalidraw/element";
-
-import type { Bounds } from "@excalidraw/common";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawFrameLikeElement,
-  ExcalidrawTextElement,
-  NonDeletedExcalidrawElement,
-  NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
+import { newTextElement } from "@vidraw/element";
 
 import { getDefaultAppState } from "../appState";
 import { base64ToString, decode, encode, stringToBase64 } from "../data/encode";
@@ -57,6 +44,16 @@ import { Fonts } from "../fonts";
 
 import { renderStaticScene } from "../renderer/staticScene";
 import { renderSceneToSvg } from "../renderer/staticSvgScene";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawFrameLikeElement,
+  ExcalidrawTextElement,
+  NonDeletedExcalidrawElement,
+  NonDeletedSceneElementsMap,
+} from "@vidraw/element/types";
+
+import type { Bounds } from "@vidraw/common";
 
 import type { RenderableElementsMap } from "./types";
 

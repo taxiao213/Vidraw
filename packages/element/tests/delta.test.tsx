@@ -1,10 +1,10 @@
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
-
-import type { ObservedAppState } from "@excalidraw/excalidraw/types";
-import type { LinearElementEditor } from "@excalidraw/element";
-import type { SceneElementsMap } from "@excalidraw/element/types";
+import { API } from "@vidraw/excalidraw/tests/helpers/api";
 
 import { AppStateDelta, Delta, ElementsDelta } from "../src/delta";
+
+import type { ObservedAppState } from "@vidraw/excalidraw/types";
+import type { LinearElementEditor } from "@vidraw/element";
+import type { SceneElementsMap } from "@vidraw/element/types";
 
 describe("ElementsDelta", () => {
   describe("elements delta calculation", () => {

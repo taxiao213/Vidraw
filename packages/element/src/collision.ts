@@ -1,4 +1,4 @@
-import { invariant, isTransparent, type Bounds } from "@excalidraw/common";
+import { invariant, isTransparent, type Bounds } from "@vidraw/common";
 import {
   curveIntersectLineSegment,
   isPointWithinBounds,
@@ -11,21 +11,9 @@ import {
   vectorFromPoint,
   vectorNormalize,
   vectorScale,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
-import {
-  ellipse,
-  ellipseSegmentInterceptPoints,
-} from "@excalidraw/math/ellipse";
-
-import type {
-  Curve,
-  GlobalPoint,
-  LineSegment,
-  Radians,
-} from "@excalidraw/math";
-
-import type { FrameNameBounds } from "@excalidraw/excalidraw/types";
+import { ellipse, ellipseSegmentInterceptPoints } from "@vidraw/math/ellipse";
 
 import { isPathALoop } from "./utils";
 import {
@@ -60,6 +48,10 @@ import { LinearElementEditor } from "./linearElementEditor";
 import { distanceToElement } from "./distance";
 
 import { getBindingGap } from "./binding";
+
+import type { FrameNameBounds } from "@vidraw/excalidraw/types";
+
+import type { Curve, GlobalPoint, LineSegment, Radians } from "@vidraw/math";
 
 import type {
   ElementsMap,

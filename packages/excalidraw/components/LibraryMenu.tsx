@@ -16,12 +16,7 @@ import {
   addEventListener,
   EVENT,
   CLASSES,
-} from "@excalidraw/common";
-
-import type {
-  ExcalidrawElement,
-  NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/common";
 
 import { trackEvent } from "../analytics";
 import { useUIAppState } from "../context/ui-appState";
@@ -45,6 +40,11 @@ import LibraryMenuItems from "./LibraryMenuItems";
 import Spinner from "./Spinner";
 
 import "./LibraryMenu.scss";
+
+import type {
+  ExcalidrawElement,
+  NonDeletedExcalidrawElement,
+} from "@vidraw/element/types";
 
 import type {
   LibraryItems,

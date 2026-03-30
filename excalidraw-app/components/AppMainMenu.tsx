@@ -2,18 +2,18 @@ import {
   loginIcon,
   ExcalLogo,
   eyeIcon,
-} from "@excalidraw/excalidraw/components/icons";
-import { MainMenu } from "@excalidraw/excalidraw/index";
+} from "@vidraw/excalidraw/components/icons";
+import { MainMenu } from "@vidraw/excalidraw/index";
 import React from "react";
 
-import { isDevEnv } from "@excalidraw/common";
-
-import type { Theme } from "@excalidraw/element/types";
+import { isDevEnv } from "@vidraw/common";
 
 import { LanguageList } from "../app-language/LanguageList";
 import { isExcalidrawPlusSignedUser } from "../app_constants";
 
 import { saveDebugState } from "./DebugCanvas";
+
+import type { Theme } from "@vidraw/element/types";
 
 export const AppMainMenu: React.FC<{
   onCollabDialogOpen: () => any;

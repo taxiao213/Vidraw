@@ -8,9 +8,7 @@ import {
   KEYS,
   capitalizeString,
   isWritableElement,
-} from "@excalidraw/common";
-
-import type { MarkRequired } from "@excalidraw/common/utility-types";
+} from "@vidraw/common";
 
 import { actionToggleShapeSwitch } from "../../actions/actionToggleShapeSwitch";
 import { getShortcutKey } from "../../shortcut";
@@ -73,6 +71,8 @@ import {
 
 import * as defaultItems from "./defaultCommandPaletteItems";
 import "./CommandPalette.scss";
+
+import type { MarkRequired } from "@vidraw/common/utility-types";
 
 import type { CommandPaletteItem } from "./types";
 import type { AppProps, AppState, LibraryItem, UIAppState } from "../../types";

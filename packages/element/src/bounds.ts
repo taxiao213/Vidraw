@@ -6,7 +6,7 @@ import {
   invariant,
   rescalePoints,
   sizeOf,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import {
   degreesToRadians,
@@ -15,24 +15,11 @@ import {
   pointFrom,
   pointFromArray,
   pointRotateRads,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
-import { getCurvePathOps } from "@excalidraw/utils/shape";
+import { getCurvePathOps } from "@vidraw/utils/shape";
 
 import { pointsOnBezierCurves } from "points-on-curve";
-
-import type {
-  Curve,
-  Degrees,
-  GlobalPoint,
-  LineSegment,
-  LocalPoint,
-  Radians,
-} from "@excalidraw/math";
-
-import type { AppState } from "@excalidraw/excalidraw/types";
-
-import type { Mutable } from "@excalidraw/common/utility-types";
 
 import { generateRoughOptions } from "./shape";
 import { ShapeCache } from "./shape";
@@ -53,6 +40,17 @@ import {
   deconstructDiamondElement,
   deconstructRectanguloidElement,
 } from "./utils";
+
+import type { AppState } from "@vidraw/excalidraw/types";
+import type { Mutable } from "@vidraw/common/utility-types";
+import type {
+  Curve,
+  Degrees,
+  GlobalPoint,
+  LineSegment,
+  LocalPoint,
+  Radians,
+} from "@vidraw/math";
 
 import type { Drawable, Op } from "roughjs/bin/core";
 import type { Point as RoughPoint } from "roughjs/bin/geometry";

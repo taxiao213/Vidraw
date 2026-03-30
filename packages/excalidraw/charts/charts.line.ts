@@ -1,10 +1,8 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 
-import { isDevEnv } from "@excalidraw/common";
+import { isDevEnv } from "@vidraw/common";
 
-import { newElement, newLinearElement } from "@excalidraw/element";
-
-import type { LocalPoint } from "@excalidraw/math";
+import { newElement, newLinearElement } from "@vidraw/element";
 
 import { GRID_OPACITY, commonProps } from "./charts.constants";
 import {
@@ -18,6 +16,8 @@ import {
   getRotatedTextElementBottom,
   getSeriesColors,
 } from "./charts.helpers";
+
+import type { LocalPoint } from "@vidraw/math";
 
 import type { ChartElements, Spreadsheet } from "./charts.types";
 

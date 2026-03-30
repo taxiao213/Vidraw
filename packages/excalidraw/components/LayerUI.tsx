@@ -8,15 +8,13 @@ import {
   arrayToMap,
   capitalizeString,
   isShallowEqual,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { mutateElement } from "@excalidraw/element";
+import { mutateElement } from "@vidraw/element";
 
-import { showSelectedShapeActions } from "@excalidraw/element";
+import { showSelectedShapeActions } from "@vidraw/element";
 
-import { ShapeCache } from "@excalidraw/element";
-
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+import { ShapeCache } from "@vidraw/element";
 
 import { actionToggleStats } from "../actions";
 import { trackEvent } from "../analytics";
@@ -64,6 +62,8 @@ import { Toast } from "./Toast";
 
 import "./LayerUI.scss";
 import "./Toolbar.scss";
+
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
 
 import type { ActionManager } from "../actions/manager";
 

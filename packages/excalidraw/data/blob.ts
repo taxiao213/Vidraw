@@ -5,10 +5,7 @@ import {
   MIME_TYPES,
   bytesToHexString,
   isPromiseLike,
-} from "@excalidraw/common";
-
-import type { ValueOf } from "@excalidraw/common/utility-types";
-import type { ExcalidrawElement, FileId } from "@excalidraw/element/types";
+} from "@vidraw/common";
 
 import { cleanAppStateForExport } from "../appState";
 
@@ -24,6 +21,9 @@ import {
   restoreElements,
   restoreLibraryItems,
 } from "./restore";
+
+import type { ExcalidrawElement, FileId } from "@vidraw/element/types";
+import type { ValueOf } from "@vidraw/common/utility-types";
 
 import type { AppState, DataURL, LibraryItem } from "../types";
 

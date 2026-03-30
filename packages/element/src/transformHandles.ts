@@ -1,25 +1,23 @@
 import {
   DEFAULT_TRANSFORM_HANDLE_SPACING,
   type EditorInterface,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { pointFrom, pointRotateRads } from "@excalidraw/math";
-
-import type { Radians } from "@excalidraw/math";
-
-import type {
-  InteractiveCanvasAppState,
-  Zoom,
-} from "@excalidraw/excalidraw/types";
-import type { Bounds } from "@excalidraw/common";
+import { pointFrom, pointRotateRads } from "@vidraw/math";
 
 import { getElementAbsoluteCoords } from "./bounds";
+
 import {
   isElbowArrow,
   isFrameLikeElement,
   isImageElement,
   isLinearElement,
 } from "./typeChecks";
+
+import type { Radians } from "@vidraw/math";
+
+import type { InteractiveCanvasAppState, Zoom } from "@vidraw/excalidraw/types";
+import type { Bounds } from "@vidraw/common";
 
 import type {
   ElementsMap,

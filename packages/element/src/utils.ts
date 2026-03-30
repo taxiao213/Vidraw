@@ -4,7 +4,7 @@ import {
   invariant,
   LINE_CONFIRM_THRESHOLD,
   ROUNDNESS,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import {
   bezierEquation,
@@ -24,15 +24,7 @@ import {
   vectorNormalize,
   vectorScale,
   type GlobalPoint,
-} from "@excalidraw/math";
-
-import type { Curve, LineSegment, LocalPoint } from "@excalidraw/math";
-
-import type {
-  AppState,
-  NormalizedZoomValue,
-  Zoom,
-} from "@excalidraw/excalidraw/types";
+} from "@vidraw/math";
 
 import { elementCenterPoint, getDiamondPoints } from "./bounds";
 
@@ -47,6 +39,14 @@ import {
   getGlobalFixedPointForBindableElement,
   normalizeFixedPoint,
 } from "./binding";
+
+import type {
+  AppState,
+  NormalizedZoomValue,
+  Zoom,
+} from "@vidraw/excalidraw/types";
+
+import type { Curve, LineSegment, LocalPoint } from "@vidraw/math";
 
 import type {
   ElementsMap,

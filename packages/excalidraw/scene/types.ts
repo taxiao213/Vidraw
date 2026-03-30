@@ -1,12 +1,12 @@
-import type { UserIdleState, EditorInterface } from "@excalidraw/common";
+import type { UserIdleState, EditorInterface } from "@vidraw/common";
 import type {
   ExcalidrawElement,
   NonDeletedElementsMap,
   NonDeletedExcalidrawElement,
   NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
+} from "@vidraw/element/types";
 
-import type { MakeBrand } from "@excalidraw/common/utility-types";
+import type { MakeBrand } from "@vidraw/common/utility-types";
 
 import type {
   AppClassProperties,

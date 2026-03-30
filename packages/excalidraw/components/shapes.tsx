@@ -1,4 +1,4 @@
-import { KEYS } from "@excalidraw/common";
+import { KEYS } from "@vidraw/common";
 
 import {
   SelectionIcon,

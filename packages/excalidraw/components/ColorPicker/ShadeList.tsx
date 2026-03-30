@@ -1,8 +1,6 @@
 import clsx from "clsx";
 import { useEffect, useRef } from "react";
 
-import type { ColorPaletteCustom } from "@excalidraw/common";
-
 import { useAtom } from "../../editor-jotai";
 import { t } from "../../i18n";
 
@@ -11,6 +9,8 @@ import {
   activeColorPickerSectionAtom,
   getColorNameAndShadeFromColor,
 } from "./colorPickerUtils";
+
+import type { ColorPaletteCustom } from "@vidraw/common";
 
 interface ShadeListProps {
   color: string | null;

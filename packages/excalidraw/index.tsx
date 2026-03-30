@@ -6,7 +6,7 @@ import React, {
   useState,
 } from "react";
 
-import { DEFAULT_UI_OPTIONS, isShallowEqual } from "@excalidraw/common";
+import { DEFAULT_UI_OPTIONS, isShallowEqual } from "@vidraw/common";
 
 import App, {
   ExcalidrawAPIContext,
@@ -284,10 +284,10 @@ export {
   hashElementsVersion,
   hashString,
   getNonDeletedElements,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-export { getTextFromElements } from "@excalidraw/element";
-export { isInvisiblySmallElement } from "@excalidraw/element";
+export { getTextFromElements } from "@vidraw/element";
+export { isInvisiblySmallElement } from "@vidraw/element";
 
 export { defaultLang, useI18n, languages } from "./i18n";
 export {
@@ -304,7 +304,7 @@ export {
   exportToBlob,
   exportToSvg,
   exportToClipboard,
-} from "@excalidraw/utils/export";
+} from "@vidraw/utils/export";
 
 export { serializeAsJSON, serializeLibraryAsJSON } from "./data/json";
 export {
@@ -313,7 +313,7 @@ export {
   loadLibraryFromBlob,
 } from "./data/blob";
 export { mergeLibraryItems, getLibraryItemsHash } from "./data/library";
-export { isLinearElement } from "@excalidraw/element";
+export { isLinearElement } from "@vidraw/element";
 
 export {
   FONT_FAMILY,
@@ -327,15 +327,11 @@ export {
   viewportCoordsToSceneCoords,
   getFormFactor,
   throttleRAF,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-export {
-  mutateElement,
-  newElementWith,
-  bumpVersion,
-} from "@excalidraw/element";
+export { mutateElement, newElementWith, bumpVersion } from "@vidraw/element";
 
-export { CaptureUpdateAction } from "@excalidraw/element";
+export { CaptureUpdateAction } from "@vidraw/element";
 
 export { parseLibraryTokensFromUrl, useHandleLibrary } from "./data/library";
 
@@ -370,21 +366,21 @@ export {
   getCommonBounds,
   getVisibleSceneBounds,
   convertToExcalidrawElements,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
 export {
   elementsOverlappingBBox,
   isElementInsideBBox,
   elementPartiallyOverlapsWithOrContainsBBox,
-} from "@excalidraw/utils/withinBounds";
+} from "@vidraw/utils/withinBounds";
 
 export { DiagramToCodePlugin } from "./components/DiagramToCodePlugin/DiagramToCodePlugin";
 export { getDataURL } from "./data/blob";
-export { isElementLink } from "@excalidraw/element";
+export { isElementLink } from "@vidraw/element";
 
 export { Fonts } from "./fonts/Fonts";
 
-export { setCustomTextMetricsProvider } from "@excalidraw/element";
+export { setCustomTextMetricsProvider } from "@vidraw/element";
 
 export { CommandPalette } from "./components/CommandPalette/CommandPalette";
 

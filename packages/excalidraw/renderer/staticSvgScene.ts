@@ -10,37 +10,37 @@ import {
   getVerticalOffset,
   applyDarkModeFilter,
   MIME_TYPES,
-} from "@excalidraw/common";
-import { normalizeLink, toValidURL } from "@excalidraw/common";
-import { hashString } from "@excalidraw/element";
-import { getUncroppedWidthAndHeight } from "@excalidraw/element";
+} from "@vidraw/common";
+import { normalizeLink, toValidURL } from "@vidraw/common";
+import { hashString } from "@vidraw/element";
+import { getUncroppedWidthAndHeight } from "@vidraw/element";
 import {
   createPlaceholderEmbeddableLabel,
   getEmbedLink,
-} from "@excalidraw/element";
-import { LinearElementEditor } from "@excalidraw/element";
-import { getBoundTextElement, getContainerElement } from "@excalidraw/element";
-import { getLineHeightInPx } from "@excalidraw/element";
+} from "@vidraw/element";
+import { LinearElementEditor } from "@vidraw/element";
+import { getBoundTextElement, getContainerElement } from "@vidraw/element";
+import { getLineHeightInPx } from "@vidraw/element";
 import {
   isArrowElement,
   isIframeLikeElement,
   isInitializedImageElement,
   isTextElement,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { getContainingFrame } from "@excalidraw/element";
+import { getContainingFrame } from "@vidraw/element";
 
-import { getCornerRadius, isPathALoop } from "@excalidraw/element";
+import { getCornerRadius, isPathALoop } from "@vidraw/element";
 
-import { ShapeCache } from "@excalidraw/element";
+import { ShapeCache } from "@vidraw/element";
 
-import { getElementAbsoluteCoords } from "@excalidraw/element";
+import { getElementAbsoluteCoords } from "@vidraw/element";
 
 import type {
   ExcalidrawElement,
   ExcalidrawTextElementWithContainer,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/element/types";
 
 import type { RenderableElementsMap, SVGRenderConfig } from "../scene/types";
 import type { AppState, BinaryFiles } from "../types";

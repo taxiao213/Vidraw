@@ -1,16 +1,16 @@
-import { isElementInViewport } from "@excalidraw/element";
+import { isElementInViewport } from "@vidraw/element";
 
-import { memoize, toBrandedType } from "@excalidraw/common";
+import { memoize, toBrandedType } from "@vidraw/common";
+
+import { renderStaticSceneThrottled } from "../renderer/staticScene";
 
 import type {
   ExcalidrawElement,
   NonDeletedElementsMap,
   NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/element/types";
 
-import type { Scene } from "@excalidraw/element";
-
-import { renderStaticSceneThrottled } from "../renderer/staticScene";
+import type { Scene } from "@vidraw/element";
 
 import type { RenderableElementsMap } from "./types";
 

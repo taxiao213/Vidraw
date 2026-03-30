@@ -1,16 +1,4 @@
-import { average } from "@excalidraw/math";
-
-import type { GlobalCoord } from "@excalidraw/math";
-
-import type { FontFamilyValues, FontString } from "@excalidraw/element/types";
-
-import type {
-  ActiveTool,
-  AppState,
-  ToolType,
-  UnsubscribeCallback,
-  Zoom,
-} from "@excalidraw/excalidraw/types";
+import { average } from "@vidraw/math";
 
 import {
   DEFAULT_VERSION,
@@ -19,6 +7,18 @@ import {
   getFontFamilyFallbacks,
   WINDOWS_EMOJI_FALLBACK_FONT,
 } from "./constants";
+
+import type { GlobalCoord } from "@vidraw/math";
+
+import type { FontFamilyValues, FontString } from "@vidraw/element/types";
+
+import type {
+  ActiveTool,
+  AppState,
+  ToolType,
+  UnsubscribeCallback,
+  Zoom,
+} from "@vidraw/excalidraw/types";
 
 import type { MaybePromise, ResolutionType } from "./utility-types";
 

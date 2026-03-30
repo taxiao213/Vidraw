@@ -1,12 +1,12 @@
 import {
   clearAppStateForLocalStorage,
   getDefaultAppState,
-} from "@excalidraw/excalidraw/appState";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-import type { AppState } from "@excalidraw/excalidraw/types";
+} from "@vidraw/excalidraw/appState";
 
 import { STORAGE_KEYS } from "../app_constants";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
+import type { AppState } from "@vidraw/excalidraw/types";
 
 export const saveUsernameToLocalStorage = (username: string) => {
   try {

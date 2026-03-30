@@ -1,23 +1,23 @@
-import { ARROW_TYPE } from "@excalidraw/common";
-import { pointFrom } from "@excalidraw/math";
-import { Excalidraw } from "@excalidraw/excalidraw";
-import { actionSelectAll } from "@excalidraw/excalidraw/actions";
-import { actionDuplicateSelection } from "@excalidraw/excalidraw/actions/actionDuplicateSelection";
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
-import { Pointer, UI } from "@excalidraw/excalidraw/tests/helpers/ui";
+import { ARROW_TYPE } from "@vidraw/common";
+import { pointFrom } from "@vidraw/math";
+import { Excalidraw } from "@vidraw/excalidraw";
+import { actionSelectAll } from "@vidraw/excalidraw/actions";
+import { actionDuplicateSelection } from "@vidraw/excalidraw/actions/actionDuplicateSelection";
+import { API } from "@vidraw/excalidraw/tests/helpers/api";
+import { Pointer, UI } from "@vidraw/excalidraw/tests/helpers/ui";
 import {
   act,
   fireEvent,
   GlobalTestState,
   queryByTestId,
   render,
-} from "@excalidraw/excalidraw/tests/test-utils";
-import "@excalidraw/utils/test-utils";
-import { bindBindingElement } from "@excalidraw/element";
-
-import type { LocalPoint } from "@excalidraw/math";
+} from "@vidraw/excalidraw/tests/test-utils";
+import "@vidraw/utils/test-utils";
+import { bindBindingElement } from "@vidraw/element";
 
 import { Scene } from "../src/Scene";
+
+import type { LocalPoint } from "@vidraw/math";
 
 import type {
   ExcalidrawArrowElement,

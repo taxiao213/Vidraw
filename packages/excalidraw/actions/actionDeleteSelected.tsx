@@ -2,28 +2,26 @@ import {
   KEYS,
   MOBILE_ACTION_BUTTON_BG,
   updateActiveTool,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { getNonDeletedElements } from "@excalidraw/element";
-import { fixBindingsAfterDeletion } from "@excalidraw/element";
-import { LinearElementEditor } from "@excalidraw/element";
-import { newElementWith } from "@excalidraw/element";
-import { getContainerElement } from "@excalidraw/element";
+import { getNonDeletedElements } from "@vidraw/element";
+import { fixBindingsAfterDeletion } from "@vidraw/element";
+import { LinearElementEditor } from "@vidraw/element";
+import { newElementWith } from "@vidraw/element";
+import { getContainerElement } from "@vidraw/element";
 import {
   isBoundToContainer,
   isElbowArrow,
   isFrameLikeElement,
-} from "@excalidraw/element";
-import { getFrameChildren } from "@excalidraw/element";
+} from "@vidraw/element";
+import { getFrameChildren } from "@vidraw/element";
 
 import {
   getElementsInGroup,
   selectGroupsForSelectedElements,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import { t } from "../i18n";
 import { getSelectedElements, isSomeElementSelected } from "../scene";
@@ -33,6 +31,8 @@ import { ToolButton } from "../components/ToolButton";
 import { useStylesPanelMode } from "../components/App";
 
 import { register } from "./register";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 import type { AppClassProperties, AppState } from "../types";
 

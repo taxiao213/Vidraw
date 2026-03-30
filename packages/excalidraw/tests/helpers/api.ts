@@ -2,9 +2,9 @@ import fs from "fs";
 import path from "path";
 import util from "util";
 
-import { pointFrom, type LocalPoint, type Radians } from "@excalidraw/math";
+import { pointFrom, type LocalPoint, type Radians } from "@vidraw/math";
 
-import { DEFAULT_VERTICAL_ALIGN, ROUNDNESS, assertNever } from "@excalidraw/common";
+import { DEFAULT_VERTICAL_ALIGN, ROUNDNESS, assertNever } from "@vidraw/common";
 
 import {
   newArrowElement,
@@ -17,14 +17,22 @@ import {
   newLinearElement,
   newMagicFrameElement,
   newTextElement,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { isLinearElementType } from "@excalidraw/element";
-import { getSelectedElements } from "@excalidraw/element";
-import { selectGroupsForSelectedElements } from "@excalidraw/element";
+import { isLinearElementType } from "@vidraw/element";
+import { getSelectedElements } from "@vidraw/element";
+import { selectGroupsForSelectedElements } from "@vidraw/element";
 
-import { FONT_SIZES } from "@excalidraw/common";
+import { FONT_SIZES } from "@vidraw/common";
 
+
+
+import { getMimeType } from "../../data/blob";
+import { createTestHook } from "../../components/App";
+import { getDefaultAppState } from "../../appState";
+import { GlobalTestState, createEvent, fireEvent, act } from "../test-utils";
+
+import type { Mutable } from "@vidraw/common/utility-types";
 import type {
   ExcalidrawElement,
   ExcalidrawGenericElement,
@@ -39,14 +47,7 @@ import type {
   ExcalidrawElbowArrowElement,
   ExcalidrawArrowElement,
   FixedSegment,
-} from "@excalidraw/element/types";
-
-import type { Mutable } from "@excalidraw/common/utility-types";
-
-import { getMimeType } from "../../data/blob";
-import { createTestHook } from "../../components/App";
-import { getDefaultAppState } from "../../appState";
-import { GlobalTestState, createEvent, fireEvent, act } from "../test-utils";
+} from "@vidraw/element/types";
 
 import type { Action } from "../../actions/types";
 import type App from "../../components/App";

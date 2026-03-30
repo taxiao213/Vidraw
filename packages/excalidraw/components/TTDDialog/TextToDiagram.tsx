@@ -1,7 +1,5 @@
 import { useRef } from "react";
 
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
-
 import { useAtom, useAtomValue } from "../../editor-jotai";
 
 import { useApp, useExcalidrawSetAppState } from "../App";
@@ -23,6 +21,8 @@ import { TTDChatPanel } from "./Chat/TTDChatPanel";
 import { TTDPreviewPanel } from "./TTDPreviewPanel";
 
 import { getLastAssistantMessage } from "./utils/chat";
+
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
 
 import type { BinaryFiles } from "../../types";
 import type {

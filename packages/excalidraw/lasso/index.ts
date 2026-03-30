@@ -1,35 +1,31 @@
-import {
-  type GlobalPoint,
-  type LineSegment,
-  pointFrom,
-} from "@excalidraw/math";
+import { type GlobalPoint, type LineSegment, pointFrom } from "@vidraw/math";
 
-import { getElementLineSegments } from "@excalidraw/element";
-import { LinearElementEditor } from "@excalidraw/element";
+import { getElementLineSegments } from "@vidraw/element";
+import { LinearElementEditor } from "@vidraw/element";
 import {
   isFrameLikeElement,
   isLinearElement,
   isTextElement,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { getFrameChildren } from "@excalidraw/element";
-import { selectGroupsForSelectedElements } from "@excalidraw/element";
+import { getFrameChildren } from "@vidraw/element";
+import { selectGroupsForSelectedElements } from "@vidraw/element";
 
-import { getContainerElement } from "@excalidraw/element";
+import { getContainerElement } from "@vidraw/element";
 
-import { arrayToMap, easeOut, isShallowEqual } from "@excalidraw/common";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawLinearElement,
-  NonDeleted,
-} from "@excalidraw/element/types";
+import { arrayToMap, easeOut, isShallowEqual } from "@vidraw/common";
 
 import { type AnimationFrameHandler } from "../animation-frame-handler";
 
 import { AnimatedTrail } from "../animated-trail";
 
 import { getLassoSelectedElementIds } from "./utils";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawLinearElement,
+  NonDeleted,
+} from "@vidraw/element/types";
 
 import type App from "../components/App";
 

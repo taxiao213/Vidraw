@@ -1,9 +1,9 @@
+import { FONT_FAMILY, FONT_FAMILY_FALLBACKS } from "./constants";
+
 import type {
   ExcalidrawTextElement,
   FontFamilyValues,
-} from "@excalidraw/element/types";
-
-import { FONT_FAMILY, FONT_FAMILY_FALLBACKS } from "./constants";
+} from "@vidraw/element/types";
 
 /**
  * Encapsulates font metrics with additional font metadata.

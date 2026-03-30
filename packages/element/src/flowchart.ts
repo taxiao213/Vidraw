@@ -1,11 +1,6 @@
-import { KEYS, invariant, toBrandedType } from "@excalidraw/common";
+import { KEYS, invariant, toBrandedType } from "@vidraw/common";
 
-import { type GlobalPoint, pointFrom, type LocalPoint } from "@excalidraw/math";
-
-import type {
-  AppState,
-  PendingExcalidrawElements,
-} from "@excalidraw/excalidraw/types";
+import { type GlobalPoint, pointFrom, type LocalPoint } from "@vidraw/math";
 
 import { bindBindingElement } from "./binding";
 import { updateElbowArrowPoints } from "./elbowArrow";
@@ -38,6 +33,11 @@ import {
   type Ordered,
   type OrderedExcalidrawElement,
 } from "./types";
+
+import type {
+  AppState,
+  PendingExcalidrawElements,
+} from "@vidraw/excalidraw/types";
 
 import type { Scene } from "./Scene";
 

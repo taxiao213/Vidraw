@@ -3,16 +3,16 @@ import {
   getExportSource,
   MIME_TYPES,
   VERSIONS,
-} from "@excalidraw/common";
-
-import type { ExcalidrawElement, NonDeleted } from "@excalidraw/element/types";
-
-import type { MaybePromise } from "@excalidraw/common/utility-types";
+} from "@vidraw/common";
 
 import { cleanAppStateForExport, clearAppStateForDatabase } from "../appState";
 
 import { isImageFileHandle, loadFromBlob } from "./blob";
 import { fileOpen, fileSave } from "./filesystem";
+
+import type { MaybePromise } from "@vidraw/common/utility-types";
+
+import type { ExcalidrawElement, NonDeleted } from "@vidraw/element/types";
 
 import type { AppState, BinaryFiles, LibraryItems } from "../types";
 import type {

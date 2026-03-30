@@ -5,6 +5,7 @@ package-lock.json
 firebase/
 dist/
 public/workbox
+public/ffmpeg
 packages/excalidraw/types
 examples/**/public
 dev-dist

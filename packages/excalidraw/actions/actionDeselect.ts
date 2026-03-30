@@ -3,13 +3,13 @@ import {
   isSomeElementSelected,
   makeNextSelectedElementIds,
   selectGroupsForSelectedElements,
-} from "@excalidraw/element";
-import { CaptureUpdateAction } from "@excalidraw/element";
-import { KEYS, isWritableElement, updateActiveTool } from "@excalidraw/common";
-
-import type { GroupId } from "@excalidraw/element/types";
+} from "@vidraw/element";
+import { CaptureUpdateAction } from "@vidraw/element";
+import { KEYS, isWritableElement, updateActiveTool } from "@vidraw/common";
 
 import { register } from "./register";
+
+import type { GroupId } from "@vidraw/element/types";
 
 import type { AppClassProperties, AppState } from "../types";
 

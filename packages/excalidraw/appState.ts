@@ -11,7 +11,7 @@ import {
   THEME,
   DEFAULT_GRID_STEP,
   isTestEnv,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import type { AppState, NormalizedZoomValue } from "./types";
 

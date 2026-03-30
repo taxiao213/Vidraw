@@ -1,18 +1,16 @@
-import { round } from "@excalidraw/math";
+import { round } from "@vidraw/math";
 import clsx from "clsx";
 import throttle from "lodash.throttle";
 import { useEffect, useMemo, useState, memo } from "react";
 
-import { STATS_PANELS } from "@excalidraw/common";
-import { getCommonBounds } from "@excalidraw/element";
-import { getUncroppedWidthAndHeight } from "@excalidraw/element";
-import { isImageElement } from "@excalidraw/element";
+import { STATS_PANELS } from "@vidraw/common";
+import { getCommonBounds } from "@vidraw/element";
+import { getUncroppedWidthAndHeight } from "@vidraw/element";
+import { isImageElement } from "@vidraw/element";
 
-import { frameAndChildrenSelectedTogether } from "@excalidraw/element";
+import { frameAndChildrenSelectedTogether } from "@vidraw/element";
 
-import { elementsAreInSameGroup } from "@excalidraw/element";
-
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+import { elementsAreInSameGroup } from "@vidraw/element";
 
 import { t } from "../../i18n";
 import { isGridModeEnabled } from "../../snapping";
@@ -33,6 +31,8 @@ import Position from "./Position";
 import { getAtomicUnits } from "./utils";
 
 import "./Stats.scss";
+
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
 
 import type {
   AppClassProperties,

@@ -1,15 +1,15 @@
-import type {
-  AppClassProperties,
-  AppState,
-  InteractiveCanvasAppState,
-} from "@excalidraw/excalidraw/types";
-import type { Mutable } from "@excalidraw/common/utility-types";
-
 import { getBoundTextElement } from "./textElement";
 
 import { isBoundToContainer } from "./typeChecks";
 
 import { makeNextSelectedElementIds, getSelectedElements } from "./selection";
+
+import type { Mutable } from "@vidraw/common/utility-types";
+import type {
+  AppClassProperties,
+  AppState,
+  InteractiveCanvasAppState,
+} from "@vidraw/excalidraw/types";
 
 import type {
   GroupId,

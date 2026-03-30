@@ -1,28 +1,28 @@
-import { getNonDeletedElements } from "@excalidraw/element";
-import { mutateElement } from "@excalidraw/element";
-import { newFrameElement } from "@excalidraw/element";
-import { isFrameLikeElement } from "@excalidraw/element";
+import { getNonDeletedElements } from "@vidraw/element";
+import { mutateElement } from "@vidraw/element";
+import { newFrameElement } from "@vidraw/element";
+import { isFrameLikeElement } from "@vidraw/element";
 import {
   addElementsToFrame,
   removeAllElementsFromFrame,
-} from "@excalidraw/element";
-import { getFrameChildren } from "@excalidraw/element";
+} from "@vidraw/element";
+import { getFrameChildren } from "@vidraw/element";
 
-import { KEYS, updateActiveTool } from "@excalidraw/common";
+import { KEYS, updateActiveTool } from "@vidraw/common";
 
-import { getElementsInGroup } from "@excalidraw/element";
+import { getElementsInGroup } from "@vidraw/element";
 
-import { getCommonBounds } from "@excalidraw/element";
+import { getCommonBounds } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import { setCursorForShape } from "../cursor";
 import { frameToolIcon } from "../components/icons";
 import { getSelectedElements } from "../scene";
 
 import { register } from "./register";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 import type { AppClassProperties, AppState, UIAppState } from "../types";
 

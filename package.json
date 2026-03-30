@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "excalidraw-monorepo",
+  "name": "vidraw-monorepo",
   "packageManager": "yarn@1.22.22",
   "workspaces": [
     "excalidraw-app",
@@ -90,5 +90,6 @@
   },
   "resolutions": {
     "strip-ansi": "6.0.1"
-  }
+  },
+  "dependencies": {}
 }

@@ -1,10 +1,10 @@
-import { isDevEnv } from "@excalidraw/common";
-
-import type { NestedKeyOf } from "@excalidraw/common/utility-types";
+import { isDevEnv } from "@vidraw/common";
 
 import { useAtomValue, editorJotaiStore, atom } from "./editor-jotai";
 import fallbackLangData from "./locales/en.json";
 import percentages from "./locales/percentages.json";
+
+import type { NestedKeyOf } from "@vidraw/common/utility-types";
 
 const COMPLETION_THRESHOLD = 85;
 

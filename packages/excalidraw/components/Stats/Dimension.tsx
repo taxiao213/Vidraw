@@ -1,22 +1,20 @@
-import { clamp, round } from "@excalidraw/math";
+import { clamp, round } from "@vidraw/math";
 
-import { MIN_WIDTH_OR_HEIGHT } from "@excalidraw/common";
-import {
-  MINIMAL_CROP_SIZE,
-  getUncroppedWidthAndHeight,
-} from "@excalidraw/element";
-import { resizeSingleElement } from "@excalidraw/element";
-import { isImageElement } from "@excalidraw/element";
-import { isFrameLikeElement } from "@excalidraw/element";
-import { getElementsInResizingFrame } from "@excalidraw/element";
-import { replaceAllElementsInFrame } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { Scene } from "@excalidraw/element";
+import { MIN_WIDTH_OR_HEIGHT } from "@vidraw/common";
+import { MINIMAL_CROP_SIZE, getUncroppedWidthAndHeight } from "@vidraw/element";
+import { resizeSingleElement } from "@vidraw/element";
+import { isImageElement } from "@vidraw/element";
+import { isFrameLikeElement } from "@vidraw/element";
+import { getElementsInResizingFrame } from "@vidraw/element";
+import { replaceAllElementsInFrame } from "@vidraw/element";
 
 import DragInput from "./DragInput";
+
 import { getStepSizedValue, isPropertyEditable } from "./utils";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
+
+import type { Scene } from "@vidraw/element";
 
 import type {
   DragFinishedCallbackType,

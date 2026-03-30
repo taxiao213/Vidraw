@@ -20,11 +20,9 @@ import {
   pointFrom,
   type Radians,
   type ElementsSegmentsMap,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
-import { getElementLineSegments } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import { getElementLineSegments } from "@vidraw/element";
 
 import { Excalidraw } from "../index";
 
@@ -33,6 +31,8 @@ import { getSelectedElements } from "../scene";
 import { getLassoSelectedElementIds } from "../lasso/utils";
 
 import { act, render } from "./test-utils";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 const { h } = window;
 

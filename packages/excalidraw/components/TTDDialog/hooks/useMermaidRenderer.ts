@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef } from "react";
 
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
-
 import { useAtom } from "../../../editor-jotai";
 
 import { chatHistoryAtom, errorAtom, showPreviewAtom } from "../TTDContext";
@@ -11,6 +9,8 @@ import { isValidMermaidSyntax } from "../utils/mermaidValidation";
 import { getLastAssistantMessage } from "../utils/chat";
 
 import { useUIAppState } from "../../../context/ui-appState";
+
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
 
 import type { BinaryFiles } from "../../../types";
 import type { MermaidToExcalidrawLibProps } from "../types";

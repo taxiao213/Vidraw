@@ -8,14 +8,14 @@ import {
   getEllipseShape,
   getFreedrawShape,
   getPolygonShape,
-} from "@excalidraw/utils/shape";
+} from "@vidraw/utils/shape";
 
 import {
   pointFrom,
   pointDistance,
   type LocalPoint,
   pointRotateRads,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 import {
   ROUGHNESS,
   THEME,
@@ -24,23 +24,9 @@ import {
   COLOR_PALETTE,
   LINE_POLYGON_POINT_MERGE_DISTANCE,
   applyDarkModeFilter,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import { RoughGenerator } from "roughjs/bin/generator";
-
-import type { GlobalPoint } from "@excalidraw/math";
-
-import type { Mutable } from "@excalidraw/common/utility-types";
-
-import type {
-  AppState,
-  EmbedsValidationStatus,
-} from "@excalidraw/excalidraw/types";
-import type {
-  ElementShape,
-  ElementShapes,
-  SVGPathString,
-} from "@excalidraw/excalidraw/scene/types";
 
 import { elementWithCanvasCache } from "./renderElement";
 
@@ -63,6 +49,19 @@ import {
   getElementAbsoluteCoords,
 } from "./bounds";
 import { shouldTestInside } from "./collision";
+
+import type {
+  ElementShape,
+  ElementShapes,
+  SVGPathString,
+} from "@vidraw/excalidraw/scene/types";
+
+import type { Mutable } from "@vidraw/common/utility-types";
+import type {
+  AppState,
+  EmbedsValidationStatus,
+} from "@vidraw/excalidraw/types";
+import type { GlobalPoint } from "@vidraw/math";
 
 import type {
   ExcalidrawElement,

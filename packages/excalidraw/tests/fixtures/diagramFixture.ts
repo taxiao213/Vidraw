@@ -1,4 +1,4 @@
-import { VERSIONS } from "@excalidraw/common";
+import { VERSIONS } from "@vidraw/common";
 
 import {
   diamondFixture,

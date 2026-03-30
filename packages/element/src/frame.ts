@@ -1,15 +1,7 @@
-import { arrayToMap } from "@excalidraw/common";
-import { isPointWithinBounds, pointFrom } from "@excalidraw/math";
-import { doLineSegmentsIntersect } from "@excalidraw/utils/bbox";
-import { elementsOverlappingBBox } from "@excalidraw/utils/withinBounds";
-
-import type {
-  AppClassProperties,
-  AppState,
-  StaticCanvasAppState,
-} from "@excalidraw/excalidraw/types";
-
-import type { ReadonlySetLike } from "@excalidraw/common/utility-types";
+import { arrayToMap } from "@vidraw/common";
+import { isPointWithinBounds, pointFrom } from "@vidraw/math";
+import { doLineSegmentsIntersect } from "@vidraw/utils/bbox";
+import { elementsOverlappingBBox } from "@vidraw/utils/withinBounds";
 
 import { getElementsWithinSelection, getSelectedElements } from "./selection";
 import { getElementsInGroup, selectGroupsFromGivenElements } from "./groups";
@@ -26,6 +18,14 @@ import {
   isFrameLikeElement,
   isTextElement,
 } from "./typeChecks";
+
+import type { ReadonlySetLike } from "@vidraw/common/utility-types";
+
+import type {
+  AppClassProperties,
+  AppState,
+  StaticCanvasAppState,
+} from "@vidraw/excalidraw/types";
 
 import type { ExcalidrawElementsIncludingDeleted } from "./Scene";
 

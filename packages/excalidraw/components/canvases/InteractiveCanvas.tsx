@@ -5,7 +5,17 @@ import {
   isShallowEqual,
   sceneCoordsToViewportCoords,
   type EditorInterface,
-} from "@excalidraw/common";
+} from "@vidraw/common";
+
+import { t } from "../../i18n";
+import { renderInteractiveScene } from "../../renderer/interactiveScene";
+
+import { AnimationController } from "../../renderer/animation";
+
+import type {
+  NonDeletedExcalidrawElement,
+  NonDeletedSceneElementsMap,
+} from "@vidraw/element/types";
 
 import type {
   InteractiveCanvasRenderConfig,
@@ -13,17 +23,7 @@ import type {
   InteractiveSceneRenderConfig,
   RenderableElementsMap,
   RenderInteractiveSceneCallback,
-} from "@excalidraw/excalidraw/scene/types";
-
-import type {
-  NonDeletedExcalidrawElement,
-  NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
-
-import { t } from "../../i18n";
-import { renderInteractiveScene } from "../../renderer/interactiveScene";
-
-import { AnimationController } from "../../renderer/animation";
+} from "@vidraw/excalidraw/scene/types";
 
 import type {
   AppClassProperties,

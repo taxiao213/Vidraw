@@ -10,12 +10,8 @@
  *   (localStorage, indexedDB).
  */
 
-import { clearAppStateForLocalStorage } from "@excalidraw/excalidraw/appState";
-import {
-  CANVAS_SEARCH_TAB,
-  DEFAULT_SIDEBAR,
-  debounce,
-} from "@excalidraw/common";
+import { clearAppStateForLocalStorage } from "@vidraw/excalidraw/appState";
+import { CANVAS_SEARCH_TAB, DEFAULT_SIDEBAR, debounce } from "@vidraw/common";
 import {
   createStore,
   entries,
@@ -26,25 +22,28 @@ import {
   get,
 } from "idb-keyval";
 
-import { appJotaiStore, atom } from "excalidraw-app/app-jotai";
-import { getNonDeletedElements } from "@excalidraw/element";
-
-import type { LibraryPersistedData } from "@excalidraw/excalidraw/data/library";
-import type { ImportedDataState } from "@excalidraw/excalidraw/data/types";
-import type { ExcalidrawElement, FileId } from "@excalidraw/element/types";
-import type {
-  AppState,
-  BinaryFileData,
-  BinaryFiles,
-} from "@excalidraw/excalidraw/types";
-import type { MaybePromise } from "@excalidraw/common/utility-types";
+import { appJotaiStore, atom } from "vidraw-app/app-jotai";
+import { getNonDeletedElements } from "@vidraw/element";
 
 import { SAVE_TO_LOCAL_STORAGE_TIMEOUT, STORAGE_KEYS } from "../app_constants";
 
 import { FileManager } from "./FileManager";
+
 import { FileStatusStore } from "./fileStatusStore";
+
 import { Locker } from "./Locker";
+
 import { updateBrowserStateVersion } from "./tabSync";
+
+import type { LibraryPersistedData } from "@vidraw/excalidraw/data/library";
+import type { ImportedDataState } from "@vidraw/excalidraw/data/types";
+import type { ExcalidrawElement, FileId } from "@vidraw/element/types";
+import type {
+  AppState,
+  BinaryFileData,
+  BinaryFiles,
+} from "@vidraw/excalidraw/types";
+import type { MaybePromise } from "@vidraw/common/utility-types";
 
 const filesStore = createStore("files-db", "files-store");
 

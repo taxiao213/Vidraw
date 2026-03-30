@@ -1,14 +1,20 @@
-import { getNonDeletedElements } from "@excalidraw/element";
-import { bindOrUnbindBindingElements } from "@excalidraw/element";
-import { getCommonBoundingBox } from "@excalidraw/element";
-import { newElementWith } from "@excalidraw/element";
-import { deepCopyElement } from "@excalidraw/element";
-import { resizeMultipleElements } from "@excalidraw/element";
-import { isArrowElement, isElbowArrow } from "@excalidraw/element";
-import { updateFrameMembershipOfSelectedElements } from "@excalidraw/element";
-import { CODES, KEYS, arrayToMap } from "@excalidraw/common";
+import { getNonDeletedElements } from "@vidraw/element";
+import { bindOrUnbindBindingElements } from "@vidraw/element";
+import { getCommonBoundingBox } from "@vidraw/element";
+import { newElementWith } from "@vidraw/element";
+import { deepCopyElement } from "@vidraw/element";
+import { resizeMultipleElements } from "@vidraw/element";
+import { isArrowElement, isElbowArrow } from "@vidraw/element";
+import { updateFrameMembershipOfSelectedElements } from "@vidraw/element";
+import { CODES, KEYS, arrayToMap } from "@vidraw/common";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
+import { CaptureUpdateAction } from "@vidraw/element";
+
+import { getSelectedElements } from "../scene";
+
+import { flipHorizontal, flipVertical } from "../components/icons";
+
+import { register } from "./register";
 
 import type {
   ExcalidrawArrowElement,
@@ -16,13 +22,7 @@ import type {
   ExcalidrawElement,
   NonDeleted,
   NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
-
-import { getSelectedElements } from "../scene";
-
-import { flipHorizontal, flipVertical } from "../components/icons";
-
-import { register } from "./register";
+} from "@vidraw/element/types";
 
 import type { AppClassProperties, AppState } from "../types";
 

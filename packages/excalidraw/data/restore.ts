@@ -1,4 +1,4 @@
-import { isFiniteNumber, pointFrom } from "@excalidraw/math";
+import { isFiniteNumber, pointFrom } from "@vidraw/math";
 
 import {
   type CombineBrandsIfNeeded,
@@ -18,7 +18,7 @@ import {
   getSizeFromPoints,
   normalizeLink,
   getLineHeight,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 import {
   calculateFixedPointForNonElbowArrowBinding,
   getNonDeletedElements,
@@ -26,16 +26,13 @@ import {
   isPointInElement,
   isValidPolygon,
   projectFixedPointOntoDiagonal,
-} from "@excalidraw/element";
-import { normalizeFixedPoint } from "@excalidraw/element";
-import {
-  updateElbowArrowPoints,
-  validateElbowPoints,
-} from "@excalidraw/element";
-import { LinearElementEditor } from "@excalidraw/element";
-import { bumpVersion } from "@excalidraw/element";
-import { getContainerElement } from "@excalidraw/element";
-import { detectLineHeight } from "@excalidraw/element";
+} from "@vidraw/element";
+import { normalizeFixedPoint } from "@vidraw/element";
+import { updateElbowArrowPoints, validateElbowPoints } from "@vidraw/element";
+import { LinearElementEditor } from "@vidraw/element";
+import { bumpVersion } from "@vidraw/element";
+import { getContainerElement } from "@vidraw/element";
+import { detectLineHeight } from "@vidraw/element";
 import {
   isArrowBoundToElement,
   isArrowElement,
@@ -44,17 +41,25 @@ import {
   isLineElement,
   isTextElement,
   isUsingAdaptiveRadius,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { syncInvalidIndices } from "@excalidraw/element";
+import { syncInvalidIndices } from "@vidraw/element";
 
-import { refreshTextDimensions } from "@excalidraw/element";
+import { refreshTextDimensions } from "@vidraw/element";
 
-import { getNormalizedDimensions } from "@excalidraw/element";
+import { getNormalizedDimensions } from "@vidraw/element";
 
-import { isInvisiblySmallElement } from "@excalidraw/element";
+import { isInvisiblySmallElement } from "@vidraw/element";
 
-import type { LocalPoint, Radians } from "@excalidraw/math";
+import { getDefaultAppState } from "../appState";
+
+import {
+  getNormalizedGridSize,
+  getNormalizedGridStep,
+  getNormalizedZoom,
+} from "../scene";
+
+import type { LocalPoint, Radians } from "@vidraw/math";
 
 import type {
   ElementsMap,
@@ -71,17 +76,9 @@ import type {
   NonDeletedSceneElementsMap,
   OrderedExcalidrawElement,
   StrokeRoundness,
-} from "@excalidraw/element/types";
+} from "@vidraw/element/types";
 
-import type { MarkOptional, Mutable } from "@excalidraw/common/utility-types";
-
-import { getDefaultAppState } from "../appState";
-
-import {
-  getNormalizedGridSize,
-  getNormalizedGridStep,
-  getNormalizedZoom,
-} from "../scene";
+import type { MarkOptional, Mutable } from "@vidraw/common/utility-types";
 
 import type {
   AppState,

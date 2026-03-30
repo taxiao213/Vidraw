@@ -5,12 +5,7 @@ import {
   CLASSES,
   DEFAULT_SIDEBAR,
   KEYS,
-} from "@excalidraw/common";
-
-import type {
-  ExcalidrawFrameLikeElement,
-  ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/common";
 
 import { Excalidraw } from "../index";
 
@@ -18,6 +13,11 @@ import { API } from "./helpers/api";
 import { Keyboard } from "./helpers/ui";
 import { updateTextEditor } from "./queries/dom";
 import { act, render, waitFor } from "./test-utils";
+
+import type {
+  ExcalidrawFrameLikeElement,
+  ExcalidrawTextElement,
+} from "@vidraw/element/types";
 
 const { h } = window;
 

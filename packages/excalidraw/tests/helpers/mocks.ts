@@ -3,7 +3,8 @@ import React from "react";
 import { vi } from "vitest";
 
 import type { parseMermaidToExcalidraw } from "@excalidraw/mermaid-to-excalidraw";
-import type { throttleRAF as throttleRAFType } from "@excalidraw/common";
+
+import type { throttleRAF as throttleRAFType } from "@vidraw/common";
 
 type ThrottledFn<T extends unknown[]> = ((...args: T) => void) & {
   flush: () => void;

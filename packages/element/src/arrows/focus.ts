@@ -1,7 +1,5 @@
-import { pointDistance, pointFrom, type GlobalPoint } from "@excalidraw/math";
-import { invariant } from "@excalidraw/common";
-
-import type { AppState, NullableGridSize } from "@excalidraw/excalidraw/types";
+import { pointDistance, pointFrom, type GlobalPoint } from "@vidraw/math";
+import { invariant } from "@vidraw/common";
 
 import {
   bindBindingElement,
@@ -22,6 +20,8 @@ import {
 import { LinearElementEditor } from "../linearElementEditor";
 import { getHoveredElementForFocusPoint, hitElementItself } from "../collision";
 import { moveArrowAboveBindable } from "../zindex";
+
+import type { AppState, NullableGridSize } from "@vidraw/excalidraw/types";
 
 import type {
   ElementsMap,

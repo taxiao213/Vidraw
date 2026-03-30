@@ -1,6 +1,4 @@
-import { randomId, reseed } from "@excalidraw/common";
-
-import type { FileId } from "@excalidraw/element/types";
+import { randomId, reseed } from "@vidraw/common";
 
 import * as blobModule from "../data/blob";
 import * as filesystemModule from "../data/filesystem";
@@ -16,6 +14,8 @@ import {
   SMILEY_IMAGE_DIMENSIONS,
 } from "./fixtures/constants";
 import { INITIALIZED_IMAGE_PROPS } from "./helpers/constants";
+
+import type { FileId } from "@vidraw/element/types";
 
 const { h } = window;
 

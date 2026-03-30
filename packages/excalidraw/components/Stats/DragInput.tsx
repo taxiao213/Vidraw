@@ -1,15 +1,11 @@
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 
-import { EVENT, KEYS, cloneJSON } from "@excalidraw/common";
+import { EVENT, KEYS, cloneJSON } from "@vidraw/common";
 
-import { deepCopyElement } from "@excalidraw/element";
+import { deepCopyElement } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type { ElementsMap, ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { Scene } from "@excalidraw/element";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import { useApp, useExcalidrawSetAppState } from "../App";
 import { InlineIcon } from "../InlineIcon";
@@ -17,6 +13,9 @@ import { InlineIcon } from "../InlineIcon";
 import { SMALLEST_DELTA } from "./utils";
 
 import "./DragInput.scss";
+
+import type { Scene } from "@vidraw/element";
+import type { ElementsMap, ExcalidrawElement } from "@vidraw/element/types";
 
 import type { StatsInputProperty } from "./utils";
 import type { AppState } from "../../types";

@@ -1,7 +1,7 @@
 import React from "react";
 import { vi } from "vitest";
 
-import { KEYS, reseed } from "@excalidraw/common";
+import { KEYS, reseed } from "@vidraw/common";
 
 import { SHAPES } from "../components/shapes";
 

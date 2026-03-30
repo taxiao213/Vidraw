@@ -2,11 +2,11 @@
  * Create and link between shapes.
  */
 
-import { ELEMENT_LINK_KEY, normalizeLink } from "@excalidraw/common";
-
-import type { AppProps, AppState } from "@excalidraw/excalidraw/types";
+import { ELEMENT_LINK_KEY, normalizeLink } from "@vidraw/common";
 
 import { elementsAreInSameGroup } from "./groups";
+
+import type { AppProps, AppState } from "@vidraw/excalidraw/types";
 
 import type { ExcalidrawElement } from "./types";
 

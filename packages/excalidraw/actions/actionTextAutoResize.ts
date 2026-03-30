@@ -1,17 +1,17 @@
-import { getFontString } from "@excalidraw/common";
+import { getFontString } from "@vidraw/common";
 
-import { isExcalidrawElement, newElementWith } from "@excalidraw/element";
-import { measureText } from "@excalidraw/element";
+import { isExcalidrawElement, newElementWith } from "@vidraw/element";
+import { measureText } from "@vidraw/element";
 
-import { isTextElement } from "@excalidraw/element";
+import { isTextElement } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import { getSelectedElements } from "../scene";
 
 import { register } from "./register";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 export const actionTextAutoResize = register({
   name: "autoResize",

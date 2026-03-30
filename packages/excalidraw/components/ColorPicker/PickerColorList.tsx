@@ -1,8 +1,6 @@
 import clsx from "clsx";
 import { useEffect, useRef } from "react";
 
-import type { ColorPaletteCustom } from "@excalidraw/common";
-
 import { useAtom } from "../../editor-jotai";
 import { t } from "../../i18n";
 
@@ -12,6 +10,8 @@ import {
   colorPickerHotkeyBindings,
   getColorNameAndShadeFromColor,
 } from "./colorPickerUtils";
+
+import type { ColorPaletteCustom } from "@vidraw/common";
 
 import type { TranslationKeys } from "../../i18n";
 

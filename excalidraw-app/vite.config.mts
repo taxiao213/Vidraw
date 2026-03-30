@@ -17,6 +17,11 @@ export default defineConfig(({ mode }) => {
       port: Number(envVars.VITE_APP_PORT || 3000),
       // open the browser
       open: true,
+      // Headers required for FFmpeg.wasm (SharedArrayBuffer)
+      headers: {
+        "Cross-Origin-Opener-Policy": "same-origin",
+        "Cross-Origin-Embedder-Policy": "require-corp",
+      },
     },
     // We need to specify the envDir since now there are no
     //more located in parallel with the vite.config.ts file but in parent dir
@@ -24,55 +29,55 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: [
         {
-          find: /^@excalidraw\/common$/,
+          find: /^@vidraw\/common$/,
           replacement: path.resolve(
             __dirname,
             "../packages/common/src/index.ts",
           ),
         },
         {
-          find: /^@excalidraw\/common\/(.*?)/,
+          find: /^@vidraw\/common\/(.*?)/,
           replacement: path.resolve(__dirname, "../packages/common/src/$1"),
         },
         {
-          find: /^@excalidraw\/element$/,
+          find: /^@vidraw\/element$/,
           replacement: path.resolve(
             __dirname,
             "../packages/element/src/index.ts",
           ),
         },
         {
-          find: /^@excalidraw\/element\/(.*?)/,
+          find: /^@vidraw\/element\/(.*?)/,
           replacement: path.resolve(__dirname, "../packages/element/src/$1"),
         },
         {
-          find: /^@excalidraw\/excalidraw$/,
+          find: /^@vidraw\/excalidraw$/,
           replacement: path.resolve(
             __dirname,
             "../packages/excalidraw/index.tsx",
           ),
         },
         {
-          find: /^@excalidraw\/excalidraw\/(.*?)/,
+          find: /^@vidraw\/excalidraw\/(.*?)/,
           replacement: path.resolve(__dirname, "../packages/excalidraw/$1"),
         },
         {
-          find: /^@excalidraw\/math$/,
+          find: /^@vidraw\/math$/,
           replacement: path.resolve(__dirname, "../packages/math/src/index.ts"),
         },
         {
-          find: /^@excalidraw\/math\/(.*?)/,
+          find: /^@vidraw\/math\/(.*?)/,
           replacement: path.resolve(__dirname, "../packages/math/src/$1"),
         },
         {
-          find: /^@excalidraw\/utils$/,
+          find: /^@vidraw\/utils$/,
           replacement: path.resolve(
             __dirname,
             "../packages/utils/src/index.ts",
           ),
         },
         {
-          find: /^@excalidraw\/utils\/(.*?)/,
+          find: /^@vidraw\/utils\/(.*?)/,
           replacement: path.resolve(__dirname, "../packages/utils/src/$1"),
         },
       ],
@@ -103,7 +108,7 @@ export default defineConfig(({ mode }) => {
               return `locales/${id.substring(index + 8)}`;
             }
 
-            if (id.includes("@excalidraw/mermaid-to-excalidraw")) {
+            if (id.includes("@vidraw/mermaid-to-excalidraw")) {
               return "mermaid-to-excalidraw";
             }
 

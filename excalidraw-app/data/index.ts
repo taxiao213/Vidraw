@@ -1,33 +1,14 @@
-import {
-  compressData,
-  decompressData,
-} from "@excalidraw/excalidraw/data/encode";
+import { compressData, decompressData } from "@vidraw/excalidraw/data/encode";
 import {
   decryptData,
   generateEncryptionKey,
   IV_LENGTH_BYTES,
-} from "@excalidraw/excalidraw/data/encryption";
-import { serializeAsJSON } from "@excalidraw/excalidraw/data/json";
-import { isInvisiblySmallElement } from "@excalidraw/element";
-import { isInitializedImageElement } from "@excalidraw/element";
-import { t } from "@excalidraw/excalidraw/i18n";
-import { bytesToHexString } from "@excalidraw/common";
-
-import type { UserIdleState } from "@excalidraw/common";
-import type { ImportedDataState } from "@excalidraw/excalidraw/data/types";
-import type { SceneBounds } from "@excalidraw/element";
-import type {
-  ExcalidrawElement,
-  FileId,
-  OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
-import type {
-  AppState,
-  BinaryFileData,
-  BinaryFiles,
-  SocketId,
-} from "@excalidraw/excalidraw/types";
-import type { MakeBrand } from "@excalidraw/common/utility-types";
+} from "@vidraw/excalidraw/data/encryption";
+import { serializeAsJSON } from "@vidraw/excalidraw/data/json";
+import { isInvisiblySmallElement } from "@vidraw/element";
+import { isInitializedImageElement } from "@vidraw/element";
+import { t } from "@vidraw/excalidraw/i18n";
+import { bytesToHexString } from "@vidraw/common";
 
 import {
   DELETED_ELEMENT_TIMEOUT,
@@ -36,7 +17,24 @@ import {
 } from "../app_constants";
 
 import { encodeFilesForUpload } from "./FileManager";
+
 import { saveFilesToFirebase } from "./firebase";
+
+import type { UserIdleState } from "@vidraw/common";
+import type { ImportedDataState } from "@vidraw/excalidraw/data/types";
+import type { SceneBounds } from "@vidraw/element";
+import type {
+  ExcalidrawElement,
+  FileId,
+  OrderedExcalidrawElement,
+} from "@vidraw/element/types";
+import type {
+  AppState,
+  BinaryFileData,
+  BinaryFiles,
+  SocketId,
+} from "@vidraw/excalidraw/types";
+import type { MakeBrand } from "@vidraw/common/utility-types";
 
 import type { WS_SUBTYPES } from "../app_constants";
 

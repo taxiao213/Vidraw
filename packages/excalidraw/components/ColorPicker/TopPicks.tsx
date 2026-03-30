@@ -6,7 +6,7 @@ import {
   DEFAULT_ELEMENT_BACKGROUND_PICKS,
   DEFAULT_ELEMENT_STROKE_PICKS,
   isColorDark,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import type { ColorPickerType } from "./colorPickerUtils";
 

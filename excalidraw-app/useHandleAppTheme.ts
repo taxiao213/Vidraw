@@ -1,10 +1,10 @@
-import { THEME } from "@excalidraw/excalidraw";
-import { EVENT, CODES, KEYS } from "@excalidraw/common";
+import { THEME } from "@vidraw/excalidraw";
+import { EVENT, CODES, KEYS } from "@vidraw/common";
 import { useEffect, useLayoutEffect, useState } from "react";
 
-import type { Theme } from "@excalidraw/element/types";
-
 import { STORAGE_KEYS } from "./app_constants";
+
+import type { Theme } from "@vidraw/element/types";
 
 const getDarkThemeMediaQuery = (): MediaQueryList | undefined =>
   window.matchMedia?.("(prefers-color-scheme: dark)");

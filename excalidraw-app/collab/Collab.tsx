@@ -4,9 +4,9 @@ import {
   restoreElements,
   zoomToFitBounds,
   reconcileElements,
-} from "@excalidraw/excalidraw";
-import { ErrorDialog } from "@excalidraw/excalidraw/components/ErrorDialog";
-import { APP_NAME, cloneJSON, EVENT, toBrandedType } from "@excalidraw/common";
+} from "@vidraw/excalidraw";
+import { ErrorDialog } from "@vidraw/excalidraw/components/ErrorDialog";
+import { APP_NAME, cloneJSON, EVENT, toBrandedType } from "@vidraw/common";
 import {
   IDLE_THRESHOLD,
   ACTIVE_THRESHOLD,
@@ -17,39 +17,19 @@ import {
   preventUnload,
   resolvablePromise,
   throttleRAF,
-} from "@excalidraw/common";
-import { decryptData } from "@excalidraw/excalidraw/data/encryption";
-import { getVisibleSceneBounds } from "@excalidraw/element";
-import { newElementWith } from "@excalidraw/element";
-import { isImageElement, isInitializedImageElement } from "@excalidraw/element";
-import { AbortError } from "@excalidraw/excalidraw/errors";
-import { t } from "@excalidraw/excalidraw/i18n";
-import { withBatchedUpdates } from "@excalidraw/excalidraw/reactUtils";
+} from "@vidraw/common";
+import { decryptData } from "@vidraw/excalidraw/data/encryption";
+import { getVisibleSceneBounds } from "@vidraw/element";
+import { newElementWith } from "@vidraw/element";
+import { isImageElement, isInitializedImageElement } from "@vidraw/element";
+import { AbortError } from "@vidraw/excalidraw/errors";
+import { t } from "@vidraw/excalidraw/i18n";
+import { withBatchedUpdates } from "@vidraw/excalidraw/reactUtils";
 
 import throttle from "lodash.throttle";
 import { PureComponent } from "react";
 
-import { bumpElementVersions } from "@excalidraw/excalidraw/data/restore";
-
-import type {
-  ReconciledExcalidrawElement,
-  RemoteExcalidrawElement,
-} from "@excalidraw/excalidraw/data/reconcile";
-import type { ImportedDataState } from "@excalidraw/excalidraw/data/types";
-import type {
-  ExcalidrawElement,
-  FileId,
-  InitializedExcalidrawImageElement,
-  OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
-import type {
-  BinaryFileData,
-  ExcalidrawImperativeAPI,
-  SocketId,
-  Collaborator,
-  Gesture,
-} from "@excalidraw/excalidraw/types";
-import type { Mutable, ValueOf } from "@excalidraw/common/utility-types";
+import { bumpElementVersions } from "@vidraw/excalidraw/data/restore";
 
 import { appJotaiStore, atom } from "../app-jotai";
 import {
@@ -89,6 +69,26 @@ import { resetBrowserStateVersions } from "../data/tabSync";
 
 import { collabErrorIndicatorAtom } from "./CollabError";
 import Portal from "./Portal";
+
+import type { Mutable, ValueOf } from "@vidraw/common/utility-types";
+import type {
+  BinaryFileData,
+  ExcalidrawImperativeAPI,
+  SocketId,
+  Collaborator,
+  Gesture,
+} from "@vidraw/excalidraw/types";
+import type {
+  ExcalidrawElement,
+  FileId,
+  InitializedExcalidrawImageElement,
+  OrderedExcalidrawElement,
+} from "@vidraw/element/types";
+import type { ImportedDataState } from "@vidraw/excalidraw/data/types";
+import type {
+  ReconciledExcalidrawElement,
+  RemoteExcalidrawElement,
+} from "@vidraw/excalidraw/data/reconcile";
 
 import type {
   SocketUpdateDataSource,

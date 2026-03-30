@@ -9,9 +9,9 @@ import {
   vectorFromPoint,
   curveLength,
   curvePointAtLength,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
-import { getCurvePathOps } from "@excalidraw/utils/shape";
+import { getCurvePathOps } from "@vidraw/utils/shape";
 
 import {
   DRAGGING_THRESHOLD,
@@ -21,7 +21,7 @@ import {
   invariant,
   isShallowEqual,
   getFeatureFlag,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import {
   deconstructLinearOrFreeDrawElement,
@@ -30,19 +30,7 @@ import {
   moveArrowAboveBindable,
   projectFixedPointOntoDiagonal,
   type Store,
-} from "@excalidraw/element";
-
-import type { Radians } from "@excalidraw/math";
-
-import type {
-  AppState,
-  PointerCoords,
-  InteractiveCanvasAppState,
-  AppClassProperties,
-  NullableGridSize,
-  Zoom,
-} from "@excalidraw/excalidraw/types";
-import type { Bounds } from "@excalidraw/common";
+} from "@vidraw/element";
 
 import {
   calculateFixedPointForNonElbowArrowBinding,
@@ -67,6 +55,17 @@ import { ShapeCache, toggleLinePolygonState } from "./shape";
 import { getLockedLinearCursorAlignSize } from "./sizeHelpers";
 
 import { isLineElement } from "./typeChecks";
+
+import type {
+  AppState,
+  PointerCoords,
+  InteractiveCanvasAppState,
+  AppClassProperties,
+  NullableGridSize,
+  Zoom,
+} from "@vidraw/excalidraw/types";
+import type { Bounds } from "@vidraw/common";
+import type { Radians } from "@vidraw/math";
 
 import type { Scene } from "./Scene";
 

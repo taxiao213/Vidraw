@@ -1,20 +1,21 @@
-import { degreesToRadians, radiansToDegrees } from "@excalidraw/math";
+import { degreesToRadians, radiansToDegrees } from "@vidraw/math";
 
-import { getBoundTextElement } from "@excalidraw/element";
-import { isArrowElement } from "@excalidraw/element";
+import { getBoundTextElement } from "@vidraw/element";
+import { isArrowElement } from "@vidraw/element";
 
-import { isInGroup } from "@excalidraw/element";
-
-import type { Degrees } from "@excalidraw/math";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { Scene } from "@excalidraw/element";
+import { isInGroup } from "@vidraw/element";
 
 import { angleIcon } from "../icons";
 
 import DragInput from "./DragInput";
+
 import { getStepSizedValue, isPropertyEditable } from "./utils";
+
+import type { Degrees } from "@vidraw/math";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
+
+import type { Scene } from "@vidraw/element";
 
 import type { DragInputCallbackType } from "./DragInput";
 import type { AppState } from "../../types";

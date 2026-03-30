@@ -1,16 +1,12 @@
 import React, { useEffect, useImperativeHandle, useState } from "react";
 
-import { EVENT } from "@excalidraw/common";
+import { EVENT } from "@vidraw/common";
 
 import {
   DEFAULT_ELEMENT_BACKGROUND_COLOR_INDEX,
   DEFAULT_ELEMENT_STROKE_COLOR_INDEX,
   KEYS,
-} from "@excalidraw/common";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { ColorPaletteCustom } from "@excalidraw/common";
+} from "@vidraw/common";
 
 import { useAtom } from "../../editor-jotai";
 import { t } from "../../i18n";
@@ -26,6 +22,10 @@ import {
   isCustomColor,
 } from "./colorPickerUtils";
 import { colorPickerKeyNavHandler } from "./keyboardNavHandlers";
+
+import type { ColorPaletteCustom } from "@vidraw/common";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 import type { ColorPickerType } from "./colorPickerUtils";
 

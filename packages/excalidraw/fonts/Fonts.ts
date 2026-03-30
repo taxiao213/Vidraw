@@ -5,10 +5,10 @@ import {
   WINDOWS_EMOJI_FALLBACK_FONT,
   getFontFamilyFallbacks,
   FONT_SIZES,
-} from "@excalidraw/common";
-import { getContainerElement } from "@excalidraw/element";
-import { charWidth } from "@excalidraw/element";
-import { containsCJK } from "@excalidraw/element";
+} from "@vidraw/common";
+import { getContainerElement } from "@vidraw/element";
+import { charWidth } from "@vidraw/element";
+import { containsCJK } from "@vidraw/element";
 
 import {
   FONT_METADATA,
@@ -16,20 +16,11 @@ import {
   getFontString,
   PromisePool,
   promiseTry,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { ShapeCache } from "@excalidraw/element";
+import { ShapeCache } from "@vidraw/element";
 
-import { isTextElement } from "@excalidraw/element";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawTextElement,
-} from "@excalidraw/element/types";
-
-import type { ValueOf } from "@excalidraw/common/utility-types";
-
-import type { Scene } from "@excalidraw/element";
+import { isTextElement } from "@vidraw/element";
 
 import { CascadiaFontFaces } from "./Cascadia";
 import { ComicShannsFontFaces } from "./ComicShanns";
@@ -42,6 +33,13 @@ import { LilitaFontFaces } from "./Lilita";
 import { NunitoFontFaces } from "./Nunito";
 import { VirgilFontFaces } from "./Virgil";
 import { XiaolaiFontFaces } from "./Xiaolai";
+
+import type { ValueOf } from "@vidraw/common/utility-types";
+import type { Scene } from "@vidraw/element";
+import type {
+  ExcalidrawElement,
+  ExcalidrawTextElement,
+} from "@vidraw/element/types";
 
 export class Fonts {
   // it's ok to track fonts across multiple instances only once, so let's use

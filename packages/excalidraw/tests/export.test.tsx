@@ -1,8 +1,6 @@
 import React from "react";
 
-import { SVG_NS } from "@excalidraw/common";
-
-import type { FileId } from "@excalidraw/element/types";
+import { SVG_NS } from "@vidraw/common";
 
 import { getDefaultAppState } from "../appState";
 import { getDataURL } from "../data/blob";
@@ -17,6 +15,8 @@ import {
 
 import { API } from "./helpers/api";
 import { render, waitFor } from "./test-utils";
+
+import type { FileId } from "@vidraw/element/types";
 
 const { h } = window;
 

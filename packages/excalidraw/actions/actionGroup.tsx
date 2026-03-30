@@ -1,8 +1,8 @@
-import { getNonDeletedElements } from "@excalidraw/element";
+import { getNonDeletedElements } from "@vidraw/element";
 
-import { newElementWith } from "@excalidraw/element";
+import { newElementWith } from "@vidraw/element";
 
-import { isBoundToContainer } from "@excalidraw/element";
+import { isBoundToContainer } from "@vidraw/element";
 
 import {
   frameAndChildrenSelectedTogether,
@@ -12,9 +12,9 @@ import {
   groupByFrameLikes,
   removeElementsFromFrame,
   replaceAllElementsInFrame,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { KEYS, randomId, arrayToMap } from "@excalidraw/common";
+import { KEYS, randomId, arrayToMap } from "@vidraw/common";
 
 import {
   getSelectedGroupIds,
@@ -24,17 +24,11 @@ import {
   addToGroup,
   removeFromSelectedGroups,
   isElementInGroup,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { syncMovedIndices } from "@excalidraw/element";
+import { syncMovedIndices } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawTextElement,
-  OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import { ToolButton } from "../components/ToolButton";
 import { UngroupIcon, GroupIcon } from "../components/icons";
@@ -46,6 +40,12 @@ import { isSomeElementSelected } from "../scene";
 import { getShortcutKey } from "../shortcut";
 
 import { register } from "./register";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawTextElement,
+  OrderedExcalidrawElement,
+} from "@vidraw/element/types";
 
 import type { AppClassProperties, AppState } from "../types";
 

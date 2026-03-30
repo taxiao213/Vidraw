@@ -1,9 +1,9 @@
-import { isDarwin } from "@excalidraw/common";
-
-import type { SubtypeOf } from "@excalidraw/common/utility-types";
+import { isDarwin } from "@vidraw/common";
 
 import { t } from "../i18n";
 import { getShortcutKey } from "../shortcut";
+
+import type { SubtypeOf } from "@vidraw/common/utility-types";
 
 import type { ActionName } from "./types";
 

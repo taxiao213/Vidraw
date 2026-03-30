@@ -1,8 +1,6 @@
 import React from "react";
 
-import { getFrame } from "@excalidraw/common";
-
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+import { getFrame } from "@vidraw/common";
 
 import { actionSaveFileToDisk } from "../actions/actionExport";
 
@@ -16,6 +14,8 @@ import { ToolButton } from "./ToolButton";
 import { exportToFileIcon, LinkIcon } from "./icons";
 
 import "./ExportDialog.scss";
+
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
 
 import type { ActionManager } from "../actions/manager";
 

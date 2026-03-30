@@ -1,4 +1,4 @@
-import { clamp, roundToStep } from "@excalidraw/math";
+import { clamp, roundToStep } from "@vidraw/math";
 
 import {
   DEFAULT_CANVAS_BACKGROUND_PICKS,
@@ -10,15 +10,13 @@ import {
   updateActiveTool,
   CODES,
   KEYS,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { getNonDeletedElements } from "@excalidraw/element";
-import { newElementWith } from "@excalidraw/element";
-import { getCommonBounds, type SceneBounds } from "@excalidraw/element";
+import { getNonDeletedElements } from "@vidraw/element";
+import { newElementWith } from "@vidraw/element";
+import { getCommonBounds, type SceneBounds } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import {
   getDefaultAppState,
@@ -48,6 +46,8 @@ import { getStateForZoom } from "../scene/zoom";
 import { getShortcutKey } from "../shortcut";
 
 import { register } from "./register";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 import type { AppState, Offsets } from "../types";
 

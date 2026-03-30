@@ -7,11 +7,7 @@ import {
   COLOR_PALETTE,
   isColorDark,
   isWritableElement,
-} from "@excalidraw/common";
-
-import type { ColorTuple, ColorPaletteCustom } from "@excalidraw/common";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+} from "@vidraw/common";
 
 import { useAtom } from "../../editor-jotai";
 import { t } from "../../i18n";
@@ -33,6 +29,10 @@ import { TopPicks } from "./TopPicks";
 import { activeColorPickerSectionAtom } from "./colorPickerUtils";
 
 import "./ColorPicker.scss";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
+
+import type { ColorTuple, ColorPaletteCustom } from "@vidraw/common";
 
 import type { ColorPickerType } from "./colorPickerUtils";
 

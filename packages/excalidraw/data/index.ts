@@ -6,19 +6,13 @@ import {
   MIME_TYPES,
   cloneJSON,
   SVG_DOCUMENT_PREAMBLE,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { getNonDeletedElements } from "@excalidraw/element";
+import { getNonDeletedElements } from "@vidraw/element";
 
-import { isFrameLikeElement } from "@excalidraw/element";
+import { isFrameLikeElement } from "@vidraw/element";
 
-import { getElementsOverlappingFrame } from "@excalidraw/element";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawFrameLikeElement,
-  NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+import { getElementsOverlappingFrame } from "@vidraw/element";
 
 import {
   copyBlobToClipboardAsPng,
@@ -32,6 +26,12 @@ import { exportToCanvas, exportToSvg } from "../scene/export";
 import { canvasToBlob } from "./blob";
 import { fileSave } from "./filesystem";
 import { serializeAsJSON } from "./json";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawFrameLikeElement,
+  NonDeletedExcalidrawElement,
+} from "@vidraw/element/types";
 
 import type { ExportType } from "../scene/types";
 import type { AppState, BinaryFiles } from "../types";

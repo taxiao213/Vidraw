@@ -1,5 +1,3 @@
-import type { ChartType } from "@excalidraw/element/types";
-
 import { renderBarChart } from "./charts.bar";
 import { renderLineChart } from "./charts.line";
 import {
@@ -8,6 +6,8 @@ import {
   tryParseSpreadsheet,
 } from "./charts.parse";
 import { renderRadarChart } from "./charts.radar";
+
+import type { ChartType } from "@vidraw/element/types";
 
 import type { ChartElements, Spreadsheet } from "./charts.types";
 

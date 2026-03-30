@@ -1,21 +1,21 @@
-import { Stats } from "@excalidraw/excalidraw";
-import { copyTextToSystemClipboard } from "@excalidraw/excalidraw/clipboard";
+import { Stats } from "@vidraw/excalidraw";
+import { copyTextToSystemClipboard } from "@vidraw/excalidraw/clipboard";
 import {
   DEFAULT_VERSION,
   debounce,
   getVersion,
   nFormatter,
-} from "@excalidraw/common";
-import { t } from "@excalidraw/excalidraw/i18n";
+} from "@vidraw/common";
+import { t } from "@vidraw/excalidraw/i18n";
 import { useEffect, useState } from "react";
-
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
-import type { UIAppState } from "@excalidraw/excalidraw/types";
 
 import {
   getElementsStorageSize,
   getTotalStorageSize,
 } from "./data/localStorage";
+
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
+import type { UIAppState } from "@vidraw/excalidraw/types";
 
 type StorageSizes = { scene: number; total: number };
 

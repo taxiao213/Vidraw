@@ -10,11 +10,7 @@ import {
   getFontString,
   getUpdatedTimestamp,
   getLineHeight,
-} from "@excalidraw/common";
-
-import type { Radians } from "@excalidraw/math";
-
-import type { MarkOptional, Merge } from "@excalidraw/common/utility-types";
+} from "@vidraw/common";
 
 import {
   getElementAbsoluteCoords,
@@ -26,6 +22,10 @@ import { normalizeText, measureText } from "./textMeasurements";
 import { wrapText } from "./textWrapping";
 
 import { isLineElement } from "./typeChecks";
+
+import type { MarkOptional, Merge } from "@vidraw/common/utility-types";
+
+import type { Radians } from "@vidraw/math";
 
 import type {
   ExcalidrawElement,

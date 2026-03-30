@@ -1,8 +1,6 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 
-import { newTextElement } from "@excalidraw/element";
-
-import type { ChartType } from "@excalidraw/element/types";
+import { newTextElement } from "@vidraw/element";
 
 import { trackEvent } from "../analytics";
 import { isSpreadsheetValidForChartType, renderSpreadsheet } from "../charts";
@@ -17,6 +15,8 @@ import { Dialog } from "./Dialog";
 import "./PasteChartDialog.scss";
 
 import { bucketFillIcon } from "./icons";
+
+import type { ChartType } from "@vidraw/element/types";
 
 import type { ChartElements, Spreadsheet } from "../charts";
 

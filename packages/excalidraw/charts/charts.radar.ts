@@ -1,4 +1,4 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 
 import {
   FONT_FAMILY,
@@ -6,15 +6,9 @@ import {
   getFontString,
   getLineHeight,
   ROUGHNESS,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import {
-  measureText,
-  newLinearElement,
-  newTextElement,
-} from "@excalidraw/element";
-
-import type { LocalPoint } from "@excalidraw/math";
+import { measureText, newLinearElement, newTextElement } from "@vidraw/element";
 
 import {
   BAR_GAP,
@@ -35,6 +29,8 @@ import {
   getSeriesColors,
   isSpreadsheetValidForChartType,
 } from "./charts.helpers";
+
+import type { LocalPoint } from "@vidraw/math";
 
 import type { ChartElements, Spreadsheet } from "./charts.types";
 

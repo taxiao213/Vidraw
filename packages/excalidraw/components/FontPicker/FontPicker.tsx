@@ -2,9 +2,7 @@ import { Popover } from "radix-ui";
 import clsx from "clsx";
 import React, { useCallback, useMemo } from "react";
 
-import { FONT_FAMILY } from "@excalidraw/common";
-
-import type { FontFamilyValues } from "@excalidraw/element/types";
+import { FONT_FAMILY } from "@vidraw/common";
 
 import { t } from "../../i18n";
 import { RadioSelection } from "../RadioSelection";
@@ -19,6 +17,8 @@ import { FontPickerList } from "./FontPickerList";
 import { FontPickerTrigger } from "./FontPickerTrigger";
 
 import "./FontPicker.scss";
+
+import type { FontFamilyValues } from "@vidraw/element/types";
 
 export const DEFAULT_FONTS = [
   {

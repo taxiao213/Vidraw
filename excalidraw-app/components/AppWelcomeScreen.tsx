@@ -1,7 +1,7 @@
-import { loginIcon } from "@excalidraw/excalidraw/components/icons";
-import { POINTER_EVENTS } from "@excalidraw/common";
-import { useI18n } from "@excalidraw/excalidraw/i18n";
-import { WelcomeScreen } from "@excalidraw/excalidraw/index";
+import { loginIcon } from "@vidraw/excalidraw/components/icons";
+import { POINTER_EVENTS } from "@vidraw/common";
+import { useI18n } from "@vidraw/excalidraw/i18n";
+import { WelcomeScreen } from "@vidraw/excalidraw/index";
 import React from "react";
 
 import { isExcalidrawPlusSignedUser } from "../app_constants";

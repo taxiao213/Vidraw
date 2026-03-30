@@ -2,17 +2,17 @@ import {
   getSizeFromPoints,
   randomInteger,
   getUpdatedTimestamp,
-} from "@excalidraw/common";
-
-import type { Radians } from "@excalidraw/math";
-
-import type { Mutable } from "@excalidraw/common/utility-types";
+} from "@vidraw/common";
 
 import { ShapeCache } from "./shape";
 
 import { updateElbowArrowPoints } from "./elbowArrow";
 
 import { isElbowArrow } from "./typeChecks";
+
+import type { Mutable } from "@vidraw/common/utility-types";
+
+import type { Radians } from "@vidraw/math";
 
 import type {
   ElementsMap,

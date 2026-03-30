@@ -1,14 +1,14 @@
-import { sceneCoordsToViewportCoords } from "@excalidraw/common";
-import { getElementAbsoluteCoords } from "@excalidraw/element";
-
-import type {
-  ElementsMap,
-  NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+import { sceneCoordsToViewportCoords } from "@vidraw/common";
+import { getElementAbsoluteCoords } from "@vidraw/element";
 
 import { useExcalidrawAppState } from "../components/App";
 
 import "./ElementCanvasButtons.scss";
+
+import type {
+  ElementsMap,
+  NonDeletedExcalidrawElement,
+} from "@vidraw/element/types";
 
 import type { AppState } from "../types";
 

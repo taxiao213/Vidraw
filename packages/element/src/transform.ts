@@ -1,4 +1,4 @@
-import { pointFrom, type LocalPoint } from "@excalidraw/math";
+import { pointFrom, type LocalPoint } from "@vidraw/math";
 
 import {
   DEFAULT_FONT_FAMILY,
@@ -14,9 +14,7 @@ import {
   isDevEnv,
   toBrandedType,
   getLineHeight,
-} from "@excalidraw/common";
-
-import type { MarkOptional } from "@excalidraw/common/utility-types";
+} from "@vidraw/common";
 
 import { bindBindingElement } from "./binding";
 import {
@@ -41,6 +39,8 @@ import { LinearElementEditor } from "./linearElementEditor";
 import { getCommonBounds } from "./bounds";
 
 import { Scene } from "./Scene";
+
+import type { MarkOptional } from "@vidraw/common/utility-types";
 
 import type {
   ExcalidrawArrowElement,

@@ -3,30 +3,24 @@ import {
   FRAME_STYLE,
   THEME,
   throttleRAF,
-} from "@excalidraw/common";
-import { isElementLink } from "@excalidraw/element";
-import { createPlaceholderEmbeddableLabel } from "@excalidraw/element";
-import { getBoundTextElement } from "@excalidraw/element";
+} from "@vidraw/common";
+import { isElementLink } from "@vidraw/element";
+import { createPlaceholderEmbeddableLabel } from "@vidraw/element";
+import { getBoundTextElement } from "@vidraw/element";
 import {
   isEmbeddableElement,
   isIframeLikeElement,
   isTextElement,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 import {
   elementOverlapsWithFrame,
   getTargetFrame,
   shouldApplyFrameClip,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { renderElement } from "@excalidraw/element";
+import { renderElement } from "@vidraw/element";
 
-import { getElementAbsoluteCoords } from "@excalidraw/element";
-
-import type {
-  ElementsMap,
-  ExcalidrawFrameLikeElement,
-  NonDeletedExcalidrawElement,
-} from "@excalidraw/element/types";
+import { getElementAbsoluteCoords } from "@vidraw/element";
 
 import {
   EXTERNAL_LINK_IMG,
@@ -35,6 +29,12 @@ import {
 } from "../components/hyperlink/helpers";
 
 import { bootstrapCanvas, getNormalizedCanvasDimensions } from "./helpers";
+
+import type {
+  ElementsMap,
+  ExcalidrawFrameLikeElement,
+  NonDeletedExcalidrawElement,
+} from "@vidraw/element/types";
 
 import type {
   StaticCanvasRenderConfig,

@@ -1,15 +1,15 @@
+import { COLOR_PALETTE } from "./colors";
+
 import type {
   ExcalidrawElement,
   FontFamilyValues,
-} from "@excalidraw/element/types";
-import type { AppProps, AppState } from "@excalidraw/excalidraw/types";
-
-import { COLOR_PALETTE } from "./colors";
+} from "@vidraw/element/types";
+import type { AppProps, AppState } from "@vidraw/excalidraw/types";
 
 export const supportsResizeObserver =
   typeof window !== "undefined" && "ResizeObserver" in window;
 
-export const APP_NAME = "Excalidraw";
+export const APP_NAME = "Vidraw";
 
 // distance when creating text before it's considered `autoResize: false`
 // we're using higher threshold so that clicks that end up being drags

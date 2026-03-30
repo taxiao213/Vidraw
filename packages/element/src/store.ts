@@ -6,13 +6,7 @@ import {
   randomId,
   Emitter,
   toIterable,
-} from "@excalidraw/common";
-
-import type App from "@excalidraw/excalidraw/components/App";
-
-import type { DTO, ValueOf } from "@excalidraw/common/utility-types";
-
-import type { AppState, ObservedAppState } from "@excalidraw/excalidraw/types";
+} from "@vidraw/common";
 
 import { deepCopyElement } from "./duplicate";
 import { newElementWith } from "./mutateElement";
@@ -26,6 +20,10 @@ import {
   isInitializedImageElement,
   isImageElement,
 } from "./index";
+
+import type { DTO, ValueOf } from "@vidraw/common/utility-types";
+import type { AppState, ObservedAppState } from "@vidraw/excalidraw/types";
+import type App from "@vidraw/excalidraw/components/App";
 
 import type { ApplyToOptions } from "./delta";
 

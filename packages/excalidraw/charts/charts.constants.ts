@@ -3,9 +3,9 @@ import {
   DEFAULT_FONT_FAMILY,
   DEFAULT_FONT_SIZE,
   VERTICAL_ALIGN,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import type { Radians } from "@excalidraw/math";
+import type { Radians } from "@vidraw/math";
 
 export const CARTESIAN_BASE_SLOT_WIDTH = 44;
 export const CARTESIAN_BAR_SLOT_EXTRA_PER_SERIES = 22;

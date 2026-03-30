@@ -1,17 +1,15 @@
 import {
   SHIFT_LOCKING_ANGLE,
   viewportCoordsToSceneCoords,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 import {
   normalizeRadians,
   radiansBetweenAngles,
   radiansDifference,
   type Radians,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
-import { pointsEqual } from "@excalidraw/math";
-
-import type { AppState, Offsets, Zoom } from "@excalidraw/excalidraw/types";
+import { pointsEqual } from "@vidraw/math";
 
 import { getCommonBounds, getElementBounds } from "./bounds";
 import {
@@ -19,6 +17,8 @@ import {
   isFreeDrawElement,
   isLinearElement,
 } from "./typeChecks";
+
+import type { AppState, Offsets, Zoom } from "@vidraw/excalidraw/types";
 
 import type { ElementsMap, ExcalidrawElement } from "./types";
 

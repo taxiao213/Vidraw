@@ -11,7 +11,7 @@ import {
   vectorScale,
   type GlobalPoint,
   type LocalPoint,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
 import {
   type Bounds,
@@ -21,9 +21,7 @@ import {
   getSizeFromPoints,
   isDevEnv,
   arrayToMap,
-} from "@excalidraw/common";
-
-import type { AppState } from "@excalidraw/excalidraw/types";
+} from "@vidraw/common";
 
 import {
   bindPointToSnapToElementOutline,
@@ -54,6 +52,8 @@ import {
 } from "./types";
 import { aabbForElement, pointInsideBounds } from "./bounds";
 import { getHoveredElementForBinding } from "./collision";
+
+import type { AppState } from "@vidraw/excalidraw/types";
 
 import type { Heading } from "./heading";
 import type {

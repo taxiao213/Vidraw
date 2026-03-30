@@ -2,12 +2,7 @@ import clsx from "clsx";
 import { useRef, useState } from "react";
 import { Popover } from "radix-ui";
 
-import {
-  CLASSES,
-  KEYS,
-  capitalizeString,
-  isTransparent,
-} from "@excalidraw/common";
+import { CLASSES, KEYS, capitalizeString, isTransparent } from "@vidraw/common";
 
 import {
   shouldAllowVerticalAlign,
@@ -20,14 +15,7 @@ import {
   isArrowElement,
   hasStrokeColor,
   toolIsArrow,
-} from "@excalidraw/element";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawElementType,
-  NonDeletedElementsMap,
-  NonDeletedSceneElementsMap,
-} from "@excalidraw/element/types";
+} from "@vidraw/element";
 
 import { actionToggleZenMode } from "../actions";
 
@@ -85,6 +73,13 @@ import {
 } from "./icons";
 
 import { Island } from "./Island";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawElementType,
+  NonDeletedElementsMap,
+  NonDeletedSceneElementsMap,
+} from "@vidraw/element/types";
 
 import type {
   AppClassProperties,

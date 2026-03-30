@@ -9,18 +9,18 @@ import {
 } from "@testing-library/react";
 import ansi from "ansicolor";
 
-import { ORIG_ID, arrayToMap } from "@excalidraw/common";
+import { ORIG_ID, arrayToMap } from "@vidraw/common";
 
-import { getSelectedElements } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { AllPossibleKeys } from "@excalidraw/common/utility-types";
+import { getSelectedElements } from "@vidraw/element";
 
 import { STORAGE_KEYS } from "../../../excalidraw-app/app_constants";
 
 import { Pointer, UI } from "./helpers/ui";
 import * as toolQueries from "./queries/toolQueries";
+
+import type { AllPossibleKeys } from "@vidraw/common/utility-types";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 import type { History } from "../history";
 

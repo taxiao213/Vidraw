@@ -1,11 +1,11 @@
-import { defaultLang } from "@excalidraw/excalidraw/i18n";
-import { UI } from "@excalidraw/excalidraw/tests/helpers/ui";
+import { defaultLang } from "@vidraw/excalidraw/i18n";
+import { UI } from "@vidraw/excalidraw/tests/helpers/ui";
 import {
   screen,
   fireEvent,
   waitFor,
   render,
-} from "@excalidraw/excalidraw/tests/test-utils";
+} from "@vidraw/excalidraw/tests/test-utils";
 
 import ExcalidrawApp from "../App";
 

@@ -5,9 +5,9 @@ import {
   CODES,
   KEYS,
   getLineHeight,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { newElementWith } from "@excalidraw/element";
+import { newElementWith } from "@vidraw/element";
 
 import {
   hasBoundTextElement,
@@ -17,16 +17,11 @@ import {
   isArrowElement,
   isExcalidrawElement,
   isTextElement,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import {
-  getBoundTextElement,
-  redrawTextBoundingBox,
-} from "@excalidraw/element";
+import { getBoundTextElement, redrawTextBoundingBox } from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type { ExcalidrawTextElement } from "@excalidraw/element/types";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import { paintIcon } from "../components/icons";
 
@@ -34,6 +29,8 @@ import { t } from "../i18n";
 import { getSelectedElements } from "../scene";
 
 import { register } from "./register";
+
+import type { ExcalidrawTextElement } from "@vidraw/element/types";
 
 // `copiedStyles` is exported only for tests.
 export let copiedStyles: string = "{}";

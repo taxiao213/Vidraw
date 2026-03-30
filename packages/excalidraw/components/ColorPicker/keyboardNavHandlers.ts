@@ -1,17 +1,17 @@
-import { COLORS_PER_ROW, COLOR_PALETTE, KEYS } from "@excalidraw/common";
-
-import type {
-  ColorPickerColor,
-  ColorPalette,
-  ColorPaletteCustom,
-} from "@excalidraw/common";
-
-import type { ValueOf } from "@excalidraw/common/utility-types";
+import { COLORS_PER_ROW, COLOR_PALETTE, KEYS } from "@vidraw/common";
 
 import {
   colorPickerHotkeyBindings,
   getColorNameAndShadeFromColor,
 } from "./colorPickerUtils";
+
+import type {
+  ColorPickerColor,
+  ColorPalette,
+  ColorPaletteCustom,
+} from "@vidraw/common";
+
+import type { ValueOf } from "@vidraw/common/utility-types";
 
 import type { ActiveColorPickerSectionAtomType } from "./colorPickerUtils";
 

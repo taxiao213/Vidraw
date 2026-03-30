@@ -2,11 +2,9 @@ import {
   curvePointDistance,
   distanceToLineSegment,
   pointRotateRads,
-} from "@excalidraw/math";
+} from "@vidraw/math";
 
-import { ellipse, ellipseDistanceFromPoint } from "@excalidraw/math/ellipse";
-
-import type { GlobalPoint, Radians } from "@excalidraw/math";
+import { ellipse, ellipseDistanceFromPoint } from "@vidraw/math/ellipse";
 
 import {
   deconstructDiamondElement,
@@ -15,6 +13,8 @@ import {
 } from "./utils";
 
 import { elementCenterPoint } from "./bounds";
+
+import type { GlobalPoint, Radians } from "@vidraw/math";
 
 import type {
   ElementsMap,

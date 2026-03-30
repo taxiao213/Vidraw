@@ -1,0 +1,204 @@
+.excalidraw {
+  .camera-toolbar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background-color: var(--island-bg-color);
+    border-radius: var(--border-radius-lg) 0 0 var(--border-radius-lg);
+    box-shadow: var(--sidebar-shadow);
+    transition: transform 0.2s ease;
+    border: 1px solid var(--default-border-color);
+    border-right: none;
+
+    &--collapsed {
+      transform: translateY(-50%) translateX(calc(100% - 32px));
+    }
+
+    &__toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      padding: 0;
+      border: none;
+      background: transparent;
+      color: var(--icon-fill-color);
+      cursor: pointer;
+      border-radius: var(--border-radius-md);
+      transition: background-color 0.15s ease;
+
+      &:hover {
+        background-color: var(--button-hover-bg-color);
+      }
+    }
+
+    &__divider {
+      height: 1px;
+      background-color: var(--default-border-color);
+      margin: 0.25rem 0;
+    }
+
+    &__section-label {
+      font-size: 10px;
+      color: var(--text-secondary-color);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 0.25rem;
+      text-align: center;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      padding: 0;
+      border: none;
+      background: transparent;
+      color: var(--icon-fill-color);
+      cursor: pointer;
+      border-radius: var(--border-radius-md);
+      transition: background-color 0.15s ease;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: var(--button-hover-bg-color);
+      }
+
+      &--active {
+        color: var(--color-primary);
+
+        &:hover {
+          background-color: var(--color-primary-light);
+        }
+      }
+    }
+
+    &__shapes,
+    &__sizes {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      align-items: center;
+    }
+
+    &__shape-btn,
+    &__size-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      padding: 0;
+      border: none;
+      background: transparent;
+      color: var(--icon-fill-color);
+      cursor: pointer;
+      border-radius: var(--border-radius-md);
+      transition: background-color 0.15s ease;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: var(--button-hover-bg-color);
+      }
+
+      &--active {
+        color: var(--color-primary);
+        background-color: var(--color-primary-light);
+      }
+    }
+
+    &__custom-size {
+      font-size: 10px;
+      color: var(--text-secondary-color);
+      text-align: center;
+      margin-top: 0.125rem;
+    }
+
+    &__record-btn {
+      color: #ef4444;
+
+      &:hover:not(:disabled) {
+        background-color: rgba(239, 68, 68, 0.1);
+      }
+
+      &--ready {
+        color: #ef4444;
+        animation: pulse-ring 1.5s ease-in-out infinite;
+      }
+
+      &--recording {
+        color: #ef4444;
+        animation: pulse-ring 1s ease-in-out infinite;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@keyframes pulse-ring {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.2);
+  }
+}
+
+.camera-preview {
+  position: fixed;
+  z-index: 99;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px var(--color-primary), var(--sidebar-shadow);
+    background-color: var(--island-bg-color);
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    transform: scaleX(-1); // Mirror the video
+  }
+
+  &__resize-handle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    cursor: se-resize;
+    background: linear-gradient(
+      135deg,
+      transparent 50%,
+      var(--color-primary) 50%
+    );
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
+
+  &:hover &__resize-handle {
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

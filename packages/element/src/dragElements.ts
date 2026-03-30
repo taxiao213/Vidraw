@@ -4,16 +4,7 @@ import {
   getGridPoint,
   getFontString,
   DRAGGING_THRESHOLD,
-} from "@excalidraw/common";
-
-import type {
-  AppState,
-  NormalizedZoomValue,
-  NullableGridSize,
-  PointerDownState,
-} from "@excalidraw/excalidraw/types";
-
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
+} from "@vidraw/common";
 
 import { unbindBindingElement, updateBoundElements } from "./binding";
 import { getCommonBounds } from "./bounds";
@@ -27,6 +18,15 @@ import {
   isImageElement,
   isTextElement,
 } from "./typeChecks";
+
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
+
+import type {
+  AppState,
+  NormalizedZoomValue,
+  NullableGridSize,
+  PointerDownState,
+} from "@vidraw/excalidraw/types";
 
 import type { Scene } from "./Scene";
 

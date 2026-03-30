@@ -1,8 +1,8 @@
 import { createStore, get, set } from "idb-keyval";
 
-import type { SavedChats } from "@excalidraw/excalidraw/components/TTDDialog/types";
-
 import { STORAGE_KEYS } from "../app_constants";
+
+import type { SavedChats } from "@vidraw/excalidraw/components/TTDDialog/types";
 
 /**
  * IndexedDB adapter for TTD chat storage.

@@ -15,15 +15,11 @@ import {
   toValidURL,
   Queue,
   Emitter,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { hashElementsVersion, hashString } from "@excalidraw/element";
+import { hashElementsVersion, hashString } from "@vidraw/element";
 
-import { getCommonBoundingBox } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { MaybePromise } from "@excalidraw/common/utility-types";
+import { getCommonBoundingBox } from "@vidraw/element";
 
 import { atom, editorJotaiStore } from "../editor-jotai";
 
@@ -33,6 +29,10 @@ import { t } from "../i18n";
 
 import { loadLibraryFromBlob } from "./blob";
 import { restoreLibraryItems } from "./restore";
+
+import type { MaybePromise } from "@vidraw/common/utility-types";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 import type App from "../components/App";
 

@@ -17,9 +17,9 @@ import {
 import { syntaxHighlighting, HighlightStyle } from "@codemirror/language";
 import { tags } from "@lezer/highlight";
 
-import type { Theme } from "@excalidraw/element/types";
-
 import { mermaidLite } from "./mermaid-lang-lite";
+
+import type { Theme } from "@vidraw/element/types";
 
 export interface CodeMirrorEditorProps {
   value: string;

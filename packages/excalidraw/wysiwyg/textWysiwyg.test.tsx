@@ -1,10 +1,10 @@
 import { queryByText } from "@testing-library/react";
 
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 import {
   getLineHeightInPx,
   getOriginalContainerHeightFromCache,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
 import {
   CODES,
@@ -15,12 +15,7 @@ import {
   THEME,
   VERTICAL_ALIGN,
   applyDarkModeFilter,
-} from "@excalidraw/common";
-
-import type {
-  ExcalidrawTextElement,
-  ExcalidrawTextElementWithContainer,
-} from "@excalidraw/element/types";
+} from "@vidraw/common";
 
 import { Excalidraw } from "../index";
 import { API } from "../tests/helpers/api";
@@ -39,6 +34,11 @@ import {
   restoreOriginalGetBoundingClientRect,
 } from "../tests/test-utils";
 import { actionBindText } from "../actions";
+
+import type {
+  ExcalidrawTextElement,
+  ExcalidrawTextElementWithContainer,
+} from "@vidraw/element/types";
 
 unmountComponent();
 

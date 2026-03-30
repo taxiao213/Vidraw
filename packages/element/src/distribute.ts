@@ -1,9 +1,9 @@
-import type { AppState } from "@excalidraw/excalidraw/types";
-
 import { updateBoundElements } from "./binding";
 import { getCommonBoundingBox } from "./bounds";
 
 import { getSelectedElementsByGroup } from "./groups";
+
+import type { AppState } from "@vidraw/excalidraw/types";
 
 import type { Scene } from "./Scene";
 

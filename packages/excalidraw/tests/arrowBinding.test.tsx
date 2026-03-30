@@ -1,18 +1,7 @@
-import { reseed } from "@excalidraw/common";
-import {
-  isElbowArrow,
-  projectFixedPointOntoDiagonal,
-} from "@excalidraw/element";
+import { reseed } from "@vidraw/common";
+import { isElbowArrow, projectFixedPointOntoDiagonal } from "@vidraw/element";
 
-import { pointFrom } from "@excalidraw/math";
-
-import type { GlobalPoint, LocalPoint } from "@excalidraw/math";
-
-import type {
-  ExcalidrawArrowElement,
-  ExcalidrawBindableElement,
-  ExcalidrawElement,
-} from "@excalidraw/element/types";
+import { pointFrom } from "@vidraw/math";
 
 import { actionToggleArrowBinding } from "../actions/actionToggleArrowBinding";
 import { Excalidraw, sceneCoordsToViewportCoords } from "../index";
@@ -27,6 +16,14 @@ import {
   waitFor,
   unmountComponent,
 } from "./test-utils";
+
+import type {
+  ExcalidrawArrowElement,
+  ExcalidrawBindableElement,
+  ExcalidrawElement,
+} from "@vidraw/element/types";
+
+import type { GlobalPoint, LocalPoint } from "@vidraw/math";
 
 unmountComponent();
 

@@ -1,30 +1,25 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 
-import {
-  FONT_FAMILY,
-  ORIG_ID,
-  ROUNDNESS,
-  isPrimitive,
-} from "@excalidraw/common";
+import { FONT_FAMILY, ORIG_ID, ROUNDNESS, isPrimitive } from "@vidraw/common";
 
-import { Excalidraw, mutateElement } from "@excalidraw/excalidraw";
+import { Excalidraw, mutateElement } from "@vidraw/excalidraw";
 
-import { actionDuplicateSelection } from "@excalidraw/excalidraw/actions";
+import { actionDuplicateSelection } from "@vidraw/excalidraw/actions";
 
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
+import { API } from "@vidraw/excalidraw/tests/helpers/api";
 
-import { UI, Keyboard, Pointer } from "@excalidraw/excalidraw/tests/helpers/ui";
+import { UI, Keyboard, Pointer } from "@vidraw/excalidraw/tests/helpers/ui";
 
 import {
   act,
   assertElements,
   getCloneByOrigId,
   render,
-} from "@excalidraw/excalidraw/tests/test-utils";
-
-import type { LocalPoint } from "@excalidraw/math";
+} from "@vidraw/excalidraw/tests/test-utils";
 
 import { duplicateElement, duplicateElements } from "../src/duplicate";
+
+import type { LocalPoint } from "@vidraw/math";
 
 import type { ExcalidrawLinearElement } from "../src/types";
 

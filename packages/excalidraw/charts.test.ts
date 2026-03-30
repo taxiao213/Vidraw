@@ -1,13 +1,8 @@
-import { FONT_FAMILY } from "@excalidraw/common";
+import { FONT_FAMILY } from "@vidraw/common";
 import {
   DEFAULT_CHART_COLOR_INDEX,
   getAllColorsSpecificShade,
-} from "@excalidraw/common";
-
-import type {
-  ExcalidrawLineElement,
-  ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/common";
 
 import {
   isSpreadsheetValidForChartType,
@@ -15,6 +10,11 @@ import {
   tryParseCells,
   tryParseNumber,
 } from "./charts";
+
+import type {
+  ExcalidrawLineElement,
+  ExcalidrawTextElement,
+} from "@vidraw/element/types";
 
 import type { Spreadsheet } from "./charts";
 

@@ -1,17 +1,18 @@
-import { clamp, pointFrom, pointRotateRads, round } from "@excalidraw/math";
+import { clamp, pointFrom, pointRotateRads, round } from "@vidraw/math";
 
 import {
   getFlipAdjustedCropPosition,
   getUncroppedWidthAndHeight,
-} from "@excalidraw/element";
-import { isImageElement } from "@excalidraw/element";
-
-import type { ElementsMap, ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { Scene } from "@excalidraw/element";
+} from "@vidraw/element";
+import { isImageElement } from "@vidraw/element";
 
 import StatsDragInput from "./DragInput";
+
 import { getStepSizedValue, moveElement, STEP_SIZE } from "./utils";
+
+import type { ElementsMap, ExcalidrawElement } from "@vidraw/element/types";
+
+import type { Scene } from "@vidraw/element";
 
 import type { DragInputCallbackType } from "./DragInput";
 import type { AppState } from "../../types";

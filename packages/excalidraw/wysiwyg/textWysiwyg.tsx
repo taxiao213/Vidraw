@@ -11,18 +11,18 @@ import {
   MIME_TYPES,
   applyDarkModeFilter,
   isRTL,
-} from "@excalidraw/common";
-import { pointFrom, pointRotateRads, type Radians } from "@excalidraw/math";
+} from "@vidraw/common";
+import { pointFrom, pointRotateRads, type Radians } from "@vidraw/math";
 
 import {
   getTextFromElements,
   originalContainerCache,
   updateBoundElements,
   updateOriginalContainerCache,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { LinearElementEditor } from "@excalidraw/element";
-import { bumpVersion } from "@excalidraw/element";
+import { LinearElementEditor } from "@vidraw/element";
+import { bumpVersion } from "@vidraw/element";
 import {
   getBoundTextElementId,
   getContainerElement,
@@ -33,25 +33,18 @@ import {
   computeContainerDimensionForBoundText,
   computeBoundTextPosition,
   getBoundTextElement,
-} from "@excalidraw/element";
-import { getTextWidth } from "@excalidraw/element";
-import { getLineHeightInPx } from "@excalidraw/element";
-import { getLineWidth } from "@excalidraw/element";
-import { normalizeText } from "@excalidraw/element";
-import { wrapText } from "@excalidraw/element";
-import { getWrappedTextLines } from "@excalidraw/element";
+} from "@vidraw/element";
+import { getTextWidth } from "@vidraw/element";
+import { getLineHeightInPx } from "@vidraw/element";
+import { getLineWidth } from "@vidraw/element";
+import { normalizeText } from "@vidraw/element";
+import { wrapText } from "@vidraw/element";
+import { getWrappedTextLines } from "@vidraw/element";
 import {
   isArrowElement,
   isBoundToContainer,
   isTextElement,
-} from "@excalidraw/element";
-
-import type {
-  ExcalidrawElement,
-  ExcalidrawLinearElement,
-  ExcalidrawTextElementWithContainer,
-  ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+} from "@vidraw/element";
 
 import { actionSaveToActiveFile } from "../actions";
 
@@ -69,6 +62,13 @@ import {
   actionZoomIn,
   actionZoomOut,
 } from "../actions/actionCanvas";
+
+import type {
+  ExcalidrawElement,
+  ExcalidrawLinearElement,
+  ExcalidrawTextElementWithContainer,
+  ExcalidrawTextElement,
+} from "@vidraw/element/types";
 
 import type { ParsedDataTranferList } from "../clipboard";
 

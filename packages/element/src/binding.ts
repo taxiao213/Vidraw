@@ -3,7 +3,7 @@ import {
   getFeatureFlag,
   invariant,
   isTransparent,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
 import {
   PRECISION,
@@ -19,12 +19,7 @@ import {
   vectorNormalize,
   vectorScale,
   type GlobalPoint,
-} from "@excalidraw/math";
-
-import type { LineSegment, LocalPoint, Radians } from "@excalidraw/math";
-import type { AppState } from "@excalidraw/excalidraw/types";
-import type { MapEntry, Mutable } from "@excalidraw/common/utility-types";
-import type { Bounds } from "@excalidraw/common";
+} from "@vidraw/math";
 
 import { getCenterForBounds } from "./bounds";
 import {
@@ -62,6 +57,11 @@ import {
   deconstructRectanguloidElement,
   projectFixedPointOntoDiagonal,
 } from "./utils";
+
+import type { Bounds } from "@vidraw/common";
+import type { MapEntry, Mutable } from "@vidraw/common/utility-types";
+import type { AppState } from "@vidraw/excalidraw/types";
+import type { LineSegment, LocalPoint, Radians } from "@vidraw/math";
 
 import type { Scene } from "./Scene";
 

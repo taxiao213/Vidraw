@@ -1,4 +1,4 @@
-import { reseed } from "@excalidraw/common";
+import { reseed } from "@vidraw/common";
 
 import {
   actionSendBackward,
@@ -6,21 +6,21 @@ import {
   actionBringToFront,
   actionSendToBack,
   actionDuplicateSelection,
-} from "@excalidraw/excalidraw/actions";
+} from "@vidraw/excalidraw/actions";
 
-import { Excalidraw } from "@excalidraw/excalidraw";
+import { Excalidraw } from "@vidraw/excalidraw";
 
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
+import { API } from "@vidraw/excalidraw/tests/helpers/api";
 import {
   act,
   getCloneByOrigId,
   render,
   unmountComponent,
-} from "@excalidraw/excalidraw/tests/test-utils";
-
-import type { AppState } from "@excalidraw/excalidraw/types";
+} from "@vidraw/excalidraw/tests/test-utils";
 
 import { selectGroupsForSelectedElements } from "../src/groups";
+
+import type { AppState } from "@vidraw/excalidraw/types";
 
 import type {
   ExcalidrawElement,

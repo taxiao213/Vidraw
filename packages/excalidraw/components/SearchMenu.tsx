@@ -1,4 +1,4 @@
-import { round } from "@excalidraw/math";
+import { round } from "@vidraw/math";
 import clsx from "clsx";
 import debounce from "lodash.debounce";
 import { Fragment, memo, useEffect, useMemo, useRef, useState } from "react";
@@ -9,28 +9,23 @@ import {
   FONT_FAMILY,
   FRAME_STYLE,
   getLineHeight,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { isElementCompletelyInViewport } from "@excalidraw/element";
+import { isElementCompletelyInViewport } from "@vidraw/element";
 
-import { measureText } from "@excalidraw/element";
+import { measureText } from "@vidraw/element";
 
 import {
   KEYS,
   randomInteger,
   addEventListener,
   getFontString,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { newTextElement } from "@excalidraw/element";
-import { isTextElement, isFrameLikeElement } from "@excalidraw/element";
+import { newTextElement } from "@vidraw/element";
+import { isTextElement, isFrameLikeElement } from "@vidraw/element";
 
-import { getDefaultFrameName } from "@excalidraw/element/frame";
-
-import type {
-  ExcalidrawFrameLikeElement,
-  ExcalidrawTextElement,
-} from "@excalidraw/element/types";
+import { getDefaultFrameName } from "@vidraw/element/frame";
 
 import { atom, useAtom } from "../editor-jotai";
 
@@ -49,6 +44,11 @@ import {
 } from "./icons";
 
 import "./SearchMenu.scss";
+
+import type {
+  ExcalidrawFrameLikeElement,
+  ExcalidrawTextElement,
+} from "@vidraw/element/types";
 
 import type { AppClassProperties, SearchMatch } from "../types";
 

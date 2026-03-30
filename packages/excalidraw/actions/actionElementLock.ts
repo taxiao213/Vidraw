@@ -1,20 +1,20 @@
-import { KEYS, arrayToMap, randomId } from "@excalidraw/common";
+import { KEYS, arrayToMap, randomId } from "@vidraw/common";
 
 import {
   elementsAreInSameGroup,
   newElementWith,
   selectGroupsFromGivenElements,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
-import { CaptureUpdateAction } from "@excalidraw/element";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
+import { CaptureUpdateAction } from "@vidraw/element";
 
 import { LockedIcon, UnlockedIcon } from "../components/icons";
 
 import { getSelectedElements } from "../scene";
 
 import { register } from "./register";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
 
 import type { AppState } from "../types";
 

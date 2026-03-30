@@ -8,13 +8,9 @@ import {
   getFontString,
   isProdEnv,
   invariant,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { pointFrom, pointRotateRads, type Radians } from "@excalidraw/math";
-
-import type { AppState } from "@excalidraw/excalidraw/types";
-
-import type { ExtractSetType } from "@excalidraw/common/utility-types";
+import { pointFrom, pointRotateRads, type Radians } from "@vidraw/math";
 
 import {
   resetOriginalContainerCache,
@@ -29,6 +25,10 @@ import {
   isArrowElement,
   isTextElement,
 } from "./typeChecks";
+
+import type { ExtractSetType } from "@vidraw/common/utility-types";
+
+import type { AppState } from "@vidraw/excalidraw/types";
 
 import type { Scene } from "./Scene";
 

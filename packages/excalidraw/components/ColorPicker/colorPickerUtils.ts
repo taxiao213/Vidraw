@@ -1,10 +1,10 @@
-import { MAX_CUSTOM_COLORS_USED_IN_CANVAS } from "@excalidraw/common";
-
-import type { ExcalidrawElement } from "@excalidraw/element/types";
-
-import type { ColorPickerColor, ColorPaletteCustom } from "@excalidraw/common";
+import { MAX_CUSTOM_COLORS_USED_IN_CANVAS } from "@vidraw/common";
 
 import { atom } from "../../editor-jotai";
+
+import type { ExcalidrawElement } from "@vidraw/element/types";
+
+import type { ColorPickerColor, ColorPaletteCustom } from "@vidraw/common";
 
 export const getColorNameAndShadeFromColor = ({
   palette,

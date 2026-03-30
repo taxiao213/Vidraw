@@ -1,7 +1,7 @@
 import { vi } from "vitest";
 
-import { CURSOR_TYPE } from "@excalidraw/common";
-import { getElementAbsoluteCoords } from "@excalidraw/element";
+import { CURSOR_TYPE } from "@vidraw/common";
+import { getElementAbsoluteCoords } from "@vidraw/element";
 
 import { Excalidraw } from "../index";
 import { getLinkHandleFromCoords } from "../components/hyperlink/helpers";

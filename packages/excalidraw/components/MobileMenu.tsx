@@ -1,7 +1,5 @@
 import React from "react";
 
-import type { NonDeletedExcalidrawElement } from "@excalidraw/element/types";
-
 import { useTunnels } from "../context/tunnels";
 import { t } from "../i18n";
 import { calculateScrollCenter } from "../scene";
@@ -14,6 +12,8 @@ import { FixedSideContainer } from "./FixedSideContainer";
 import { Island } from "./Island";
 
 import { PenModeButton } from "./PenModeButton";
+
+import type { NonDeletedExcalidrawElement } from "@vidraw/element/types";
 
 import type { ActionManager } from "../actions/manager";
 import type {

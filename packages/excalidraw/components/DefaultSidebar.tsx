@@ -5,9 +5,7 @@ import {
   DEFAULT_SIDEBAR,
   LIBRARY_SIDEBAR_TAB,
   composeEventHandlers,
-} from "@excalidraw/common";
-
-import type { MarkOptional, Merge } from "@excalidraw/common/utility-types";
+} from "@vidraw/common";
 
 import { useTunnels } from "../context/tunnels";
 import { useUIAppState } from "../context/ui-appState";
@@ -20,6 +18,8 @@ import { SearchMenu } from "./SearchMenu";
 import { Sidebar } from "./Sidebar/Sidebar";
 import { withInternalFallback } from "./hoc/withInternalFallback";
 import { LibraryIcon, searchIcon } from "./icons";
+
+import type { MarkOptional, Merge } from "@vidraw/common/utility-types";
 
 import type { SidebarProps, SidebarTriggerProps } from "./Sidebar/common";
 

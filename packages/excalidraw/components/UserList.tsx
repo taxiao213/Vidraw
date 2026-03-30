@@ -2,9 +2,7 @@ import { Popover } from "radix-ui";
 import clsx from "clsx";
 import React, { useLayoutEffect } from "react";
 
-import { supportsResizeObserver, isShallowEqual } from "@excalidraw/common";
-
-import type { MarkRequired } from "@excalidraw/common/utility-types";
+import { supportsResizeObserver, isShallowEqual } from "@vidraw/common";
 
 import { t } from "../i18n";
 
@@ -15,6 +13,8 @@ import { ScrollableList } from "./ScrollableList";
 import { Tooltip } from "./Tooltip";
 
 import "./UserList.scss";
+
+import type { MarkRequired } from "@vidraw/common/utility-types";
 
 import type { ActionManager } from "../actions/manager";
 import type { Collaborator, SocketId } from "../types";

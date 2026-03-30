@@ -1,6 +1,6 @@
 import React from "react";
 
-import { DEFAULT_SIDEBAR } from "@excalidraw/common";
+import { DEFAULT_SIDEBAR } from "@vidraw/common";
 
 import { DefaultSidebar } from "../index";
 import {

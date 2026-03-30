@@ -2,44 +2,41 @@ import {
   ArrowheadArrowIcon,
   CloseIcon,
   TrashIcon,
-} from "@excalidraw/excalidraw/components/icons";
+} from "@vidraw/excalidraw/components/icons";
 import {
   bootstrapCanvas,
   getNormalizedCanvasDimensions,
-} from "@excalidraw/excalidraw/renderer/helpers";
-import { type AppState } from "@excalidraw/excalidraw/types";
-import { arrayToMap, throttleRAF } from "@excalidraw/common";
+} from "@vidraw/excalidraw/renderer/helpers";
+import { type AppState } from "@vidraw/excalidraw/types";
+import { arrayToMap, throttleRAF } from "@vidraw/common";
 import { useCallback } from "react";
 
 import {
   getGlobalFixedPointForBindableElement,
   isArrowElement,
   isBindableElement,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 
 import {
   isLineSegment,
   type GlobalPoint,
   type LineSegment,
-} from "@excalidraw/math";
-import { isCurve } from "@excalidraw/math/curve";
+} from "@vidraw/math";
+import { isCurve } from "@vidraw/math/curve";
 
 import React from "react";
 
-import type { Curve } from "@excalidraw/math";
-import type {
-  DebugElement,
-  DebugPolygon,
-} from "@excalidraw/element/visualdebug";
+import { STORAGE_KEYS } from "../app_constants";
+
+import type { Curve } from "@vidraw/math";
+import type { DebugElement, DebugPolygon } from "@vidraw/element/visualdebug";
 import type {
   ElementsMap,
   ExcalidrawArrowElement,
   ExcalidrawBindableElement,
   FixedPointBinding,
   OrderedExcalidrawElement,
-} from "@excalidraw/element/types";
-
-import { STORAGE_KEYS } from "../app_constants";
+} from "@vidraw/element/types";
 
 const renderLine = (
   context: CanvasRenderingContext2D,

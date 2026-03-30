@@ -1,10 +1,6 @@
-import {
-  pointFromPair,
-  type GlobalPoint,
-  type LocalPoint,
-} from "@excalidraw/math";
+import { pointFromPair, type GlobalPoint, type LocalPoint } from "@vidraw/math";
 
-import type { NullableGridSize } from "@excalidraw/excalidraw/types";
+import type { NullableGridSize } from "@vidraw/excalidraw/types";
 
 export const getSizeFromPoints = (
   points: readonly (GlobalPoint | LocalPoint)[],

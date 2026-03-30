@@ -1,9 +1,4 @@
-import { arrayToMap, isShallowEqual } from "@excalidraw/common";
-
-import type {
-  AppState,
-  InteractiveCanvasAppState,
-} from "@excalidraw/excalidraw/types";
+import { arrayToMap, isShallowEqual } from "@vidraw/common";
 
 import { getElementAbsoluteCoords, getElementBounds } from "./bounds";
 import { isElementInViewport } from "./sizeHelpers";
@@ -21,6 +16,11 @@ import {
 
 import { LinearElementEditor } from "./linearElementEditor";
 import { selectGroupsForSelectedElements } from "./groups";
+
+import type {
+  AppState,
+  InteractiveCanvasAppState,
+} from "@vidraw/excalidraw/types";
 
 import type {
   ElementsMap,

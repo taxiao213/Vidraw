@@ -1,5 +1,5 @@
 {
-  "name": "@excalidraw/common",
+  "name": "@vidraw/common",
   "version": "0.18.0",
   "type": "module",
   "types": "./dist/types/common/src/index.d.ts",
@@ -22,14 +22,14 @@
   "files": [
     "dist/*"
   ],
-  "description": "Excalidraw common functions, constants, etc.",
+  "description": "Vidraw common functions, constants, etc.",
   "publishConfig": {
     "access": "public"
   },
   "license": "MIT",
   "keywords": [
-    "excalidraw",
-    "excalidraw-utils"
+    "vidraw",
+    "vidraw-utils"
   ],
   "browserslist": {
     "production": [

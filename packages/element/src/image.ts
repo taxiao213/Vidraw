@@ -2,15 +2,15 @@
 // ExcalidrawImageElement & related helpers
 // -----------------------------------------------------------------------------
 
-import { MIME_TYPES, SVG_NS } from "@excalidraw/common";
+import { MIME_TYPES, SVG_NS } from "@vidraw/common";
+
+import { isInitializedImageElement } from "./typeChecks";
 
 import type {
   AppClassProperties,
   DataURL,
   BinaryFiles,
-} from "@excalidraw/excalidraw/types";
-
-import { isInitializedImageElement } from "./typeChecks";
+} from "@vidraw/excalidraw/types";
 
 import type {
   ExcalidrawElement,

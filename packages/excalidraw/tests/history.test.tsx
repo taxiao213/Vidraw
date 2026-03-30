@@ -6,9 +6,9 @@ import {
   waitFor,
 } from "@testing-library/react";
 import { vi } from "vitest";
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 
-import { newElementWith } from "@excalidraw/element";
+import { newElementWith } from "@vidraw/element";
 
 import {
   EXPORT_DATA_TYPES,
@@ -21,27 +21,13 @@ import {
   DEFAULT_ELEMENT_STROKE_COLOR_INDEX,
   reseed,
   randomId,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import "@excalidraw/utils/test-utils";
+import "@vidraw/utils/test-utils";
 
-import { ElementsDelta, AppStateDelta } from "@excalidraw/element";
+import { ElementsDelta, AppStateDelta } from "@vidraw/element";
 
-import { CaptureUpdateAction, StoreDelta } from "@excalidraw/element";
-
-import type { LocalPoint, Radians } from "@excalidraw/math";
-
-import type {
-  ExcalidrawElbowArrowElement,
-  ExcalidrawFrameElement,
-  ExcalidrawGenericElement,
-  ExcalidrawLinearElement,
-  ExcalidrawTextElement,
-  FileId,
-  FixedPointBinding,
-  FractionalIndex,
-  SceneElementsMap,
-} from "@excalidraw/element/types";
+import { CaptureUpdateAction, StoreDelta } from "@vidraw/element";
 
 import "../global.d.ts";
 
@@ -77,6 +63,20 @@ import {
   unmountComponent,
 } from "./test-utils";
 import { setupImageTest as _setupImageTest } from "./image.test";
+
+import type {
+  ExcalidrawElbowArrowElement,
+  ExcalidrawFrameElement,
+  ExcalidrawGenericElement,
+  ExcalidrawLinearElement,
+  ExcalidrawTextElement,
+  FileId,
+  FixedPointBinding,
+  FractionalIndex,
+  SceneElementsMap,
+} from "@vidraw/element/types";
+
+import type { LocalPoint, Radians } from "@vidraw/math";
 
 import type { AppState } from "../types";
 

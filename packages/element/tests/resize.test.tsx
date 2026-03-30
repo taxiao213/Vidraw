@@ -1,27 +1,24 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 
-import { Excalidraw } from "@excalidraw/excalidraw";
+import { Excalidraw } from "@vidraw/excalidraw";
 import {
   type Bounds,
   KEYS,
   getSizeFromPoints,
   reseed,
   arrayToMap,
-} from "@excalidraw/common";
+} from "@vidraw/common";
 
-import { API } from "@excalidraw/excalidraw/tests/helpers/api";
-import { UI, Keyboard, Pointer } from "@excalidraw/excalidraw/tests/helpers/ui";
-import {
-  render,
-  unmountComponent,
-} from "@excalidraw/excalidraw/tests/test-utils";
-
-import type { LocalPoint } from "@excalidraw/math";
+import { API } from "@vidraw/excalidraw/tests/helpers/api";
+import { UI, Keyboard, Pointer } from "@vidraw/excalidraw/tests/helpers/ui";
+import { render, unmountComponent } from "@vidraw/excalidraw/tests/test-utils";
 
 import { isLinearElement } from "../src/typeChecks";
 import { resizeSingleElement } from "../src/resizeElements";
 import { LinearElementEditor } from "../src/linearElementEditor";
 import { getElementPointsCoords } from "../src/bounds";
+
+import type { LocalPoint } from "@vidraw/math";
 
 import type {
   ExcalidrawElbowArrowElement,

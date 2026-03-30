@@ -1,10 +1,10 @@
-import { pointFrom } from "@excalidraw/math";
+import { pointFrom } from "@vidraw/math";
 
-import { arrayToMap, ROUNDNESS } from "@excalidraw/common";
-
-import type { LocalPoint } from "@excalidraw/math";
+import { arrayToMap, ROUNDNESS } from "@vidraw/common";
 
 import { getElementAbsoluteCoords, getElementBounds } from "../src/bounds";
+
+import type { LocalPoint } from "@vidraw/math";
 
 import type { ExcalidrawElement, ExcalidrawLinearElement } from "../src/types";
 

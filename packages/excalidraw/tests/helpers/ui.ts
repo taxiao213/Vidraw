@@ -1,12 +1,12 @@
-import { pointFrom, pointRotateRads } from "@excalidraw/math";
+import { pointFrom, pointRotateRads } from "@vidraw/math";
 
 import {
   elementCenterPoint,
   getCommonBounds,
   getElementPointsCoords,
   getLineHeightInPx,
-} from "@excalidraw/element";
-import { cropElement } from "@excalidraw/element";
+} from "@vidraw/element";
+import { cropElement } from "@vidraw/element";
 import {
   getTransformHandles,
   getTransformHandlesFromCoords,
@@ -14,18 +14,22 @@ import {
   OMIT_SIDES_FOR_MULTIPLE_ELEMENTS,
   type TransformHandle,
   type TransformHandleDirection,
-} from "@excalidraw/element";
+} from "@vidraw/element";
 import {
   isLinearElement,
   isFreeDrawElement,
   isTextElement,
   isFrameLikeElement,
-} from "@excalidraw/element";
-import { KEYS, arrayToMap, getLineHeight } from "@excalidraw/common";
+} from "@vidraw/element";
+import { KEYS, arrayToMap, getLineHeight } from "@vidraw/common";
 
-import type { GlobalPoint, LocalPoint, Radians } from "@excalidraw/math";
+import { createTestHook } from "../../components/App";
+import { getTextEditor, TEXT_EDITOR_SELECTOR } from "../queries/dom";
+import { act, fireEvent, GlobalTestState, screen } from "../test-utils";
 
-import type { TransformHandleType } from "@excalidraw/element";
+import { API } from "./api";
+
+import type { TransformHandleType } from "@vidraw/element";
 import type {
   ExcalidrawElement,
   ExcalidrawLinearElement,
@@ -38,13 +42,8 @@ import type {
   ExcalidrawTextElementWithContainer,
   ExcalidrawImageElement,
   ElementsMap,
-} from "@excalidraw/element/types";
-
-import { createTestHook } from "../../components/App";
-import { getTextEditor, TEXT_EDITOR_SELECTOR } from "../queries/dom";
-import { act, fireEvent, GlobalTestState, screen } from "../test-utils";
-
-import { API } from "./api";
+} from "@vidraw/element/types";
+import type { GlobalPoint, LocalPoint, Radians } from "@vidraw/math";
 
 import type { ToolType } from "../../types";
 

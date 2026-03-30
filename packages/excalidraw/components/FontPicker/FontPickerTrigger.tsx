@@ -1,14 +1,14 @@
 import { Popover } from "radix-ui";
 
-import { MOBILE_ACTION_BUTTON_BG } from "@excalidraw/common";
-
-import type { FontFamilyValues } from "@excalidraw/element/types";
+import { MOBILE_ACTION_BUTTON_BG } from "@vidraw/common";
 
 import { t } from "../../i18n";
 import { ButtonIcon } from "../ButtonIcon";
 import { TextIcon } from "../icons";
 
 import { useExcalidrawSetAppState } from "../App";
+
+import type { FontFamilyValues } from "@vidraw/element/types";
 
 interface FontPickerTriggerProps {
   selectedFontFamily: FontFamilyValues | null;
