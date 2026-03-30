@@ -133,6 +133,10 @@ MIT License
 
 ------
 
-<div style="text-align: center;">**⭐ 如果这个项目对你有帮助，请给一个 Star！⭐**</div>
+<div align="center">
 
-<div style="text-align: center;">Made with ❤️ by 他晓</div>
+**⭐ 如果这个项目对你有帮助，请给一个 Star！⭐**
+
+Made with ❤️ by 他晓
+
+</div>
